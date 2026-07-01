@@ -1,0 +1,30 @@
+[project]
+name = "backend"
+version = "0.1.0"
+description = "QR Ordering SaaS - Backend API"
+readme = "README.md"
+requires-python = ">=3.14"
+authors = [{ name = "SaaS Restaurantes" }]
+dependencies = [
+    "asyncpg>=0.31.0",
+    "fastapi[standard]>=0.138.2",
+    "passlib[bcrypt]>=1.7.4",
+    "pydantic>=2.0",
+    "pydantic-settings>=2.14.2",
+    "python-jose[cryptography]>=3.5.0",
+    "sqlalchemy>=2.0",
+    "supabase>=2.31.0",
+]
+
+[dependency-groups]
+dev = [
+    "httpx>=0.28.1",
+    "pytest>=9.1.1",
+    "pytest-asyncio>=1.4.0",
+]
+
+[tool.vercel]
+entrypoint = "main:app"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
