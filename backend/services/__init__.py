@@ -6,6 +6,7 @@ from services.menu import MenuService
 from services.order import OrderService
 from services.payment import PaymentService
 from services.commission import CommissionService
+from services.dashboard import DashboardService
 
 __all__ = [
     "AuthService",
@@ -16,4 +17,5 @@ __all__ = [
     "OrderService",
     "PaymentService",
     "CommissionService",
+    "DashboardService",
 ]

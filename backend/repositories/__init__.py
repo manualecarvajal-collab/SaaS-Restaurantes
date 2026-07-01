@@ -8,6 +8,7 @@ from repositories.order_item import OrderItemRepository
 from repositories.payment import PaymentRepository
 from repositories.order_status_history import OrderStatusHistoryRepository
 from repositories.commission import CommissionRepository
+from repositories.dashboard import DashboardRepository
 
 __all__ = [
     "RestaurantRepository",
@@ -20,4 +21,5 @@ __all__ = [
     "PaymentRepository",
     "OrderStatusHistoryRepository",
     "CommissionRepository",
+    "DashboardRepository",
 ]

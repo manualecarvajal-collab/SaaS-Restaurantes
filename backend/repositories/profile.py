@@ -22,3 +22,6 @@ class ProfileRepository(BaseRepository[Profile, ProfileCreate, ProfileUpdate, Pr
 
     async def get_by_restaurant(self, restaurant_id: uuid.UUID) -> list[ProfileResponse]:
         return await self.list(restaurant_id=restaurant_id)
+
+    async def get_by_role(self, role: str) -> list[ProfileResponse]:
+        return await self.list(role=role)

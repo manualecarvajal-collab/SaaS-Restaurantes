@@ -21,6 +21,13 @@ class ProfileCreate(BaseModel):
     is_active: bool = True
 
 
+class AdminCreate(BaseModel):
+    email: str
+    full_name: str
+    password: str
+    restaurant_id: uuid.UUID
+
+
 class ProfileUpdate(BaseModel):
     full_name: str | None = None
     is_active: bool | None = None
