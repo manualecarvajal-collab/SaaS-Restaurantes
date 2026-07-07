@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600&amp;family=Nunito:wght@400;700&amp;family=JetBrains+Mono:wght@400&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"/><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">try{
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-fixed": "#23005c",
+                        "on-tertiary-container": "#ffe0cd",
+                        "on-primary-fixed": "#25005a",
+                        "secondary": "#6b38d4",
+                        "on-error-container": "#93000a",
+                        "on-surface": "#1d1a24",
+                        "inverse-surface": "#332f39",
+                        "surface-container-low": "#f9f1ff",
+                        "surface-container-lowest": "#ffffff",
+                        "background": "#F9FAFB",
+                        "on-secondary-fixed-variant": "#5516be",
+                        "on-primary": "#ffffff",
+                        "primary-container": "#7c3aed",
+                        "on-surface-variant": "#4a4455",
+                        "on-tertiary-fixed": "#301400",
+                        "outline-variant": "#ccc3d8",
+                        "inverse-primary": "#d2bbff",
+                        "surface-dim": "#dfd7e6",
+                        "surface-bright": "#fef7ff",
+                        "on-secondary-container": "#fffbff",
+                        "primary-fixed-dim": "#d2bbff",
+                        "outline": "#7b7487",
+                        "secondary-container": "#8455ef",
+                        "surface-container-highest": "#e8dfee",
+                        "primary-fixed": "#eaddff",
+                        "tertiary-fixed": "#ffdcc6",
+                        "on-tertiary-fixed-variant": "#713700",
+                        "accent": "#6D28D9",
+                        "on-primary-fixed-variant": "#5a00c6",
+                        "on-background": "#1d1a24",
+                        "surface-tint": "#732ee4",
+                        "secondary-fixed": "#e9ddff",
+                        "surface": "#fef7ff",
+                        "border": "#E5E7EB",
+                        "error": "#ba1a1a",
+                        "inverse-on-surface": "#f6eefc",
+                        "card": "#FFFFFF",
+                        "destructive": "#DC2626",
+                        "surface-variant": "#e8dfee",
+                        "tertiary": "#7d3d00",
+                        "surface-container": "#f3ebfa",
+                        "foreground": "#111827",
+                        "error-container": "#ffdad6",
+                        "muted": "#F3F4F6",
+                        "on-error": "#ffffff",
+                        "on-primary-container": "#ede0ff",
+                        "on-secondary": "#ffffff",
+                        "primary": "#630ed4",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-high": "#ede5f4",
+                        "tertiary-fixed-dim": "#ffb784",
+                        "secondary-fixed-dim": "#d0bcff",
+                        "tertiary-container": "#a15100",
+                        "muted-foreground": "#6B7280"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "sm": "8px",
+                        "2xl": "48px",
+                        "xs": "4px",
+                        "margin-desktop": "32px",
+                        "base": "4px",
+                        "gutter": "16px",
+                        "xl": "32px",
+                        "lg": "24px",
+                        "margin-mobile": "16px",
+                        "md": "16px"
+                    },
+                    "fontFamily": {
+                        "small": ["Karla"],
+                        "headline-mobile": ["Nunito"],
+                        "display-mobile": ["Nunito"],
+                        "display": ["Nunito"],
+                        "code": ["JetBrains Mono"],
+                        "body": ["Karla"],
+                        "headline": ["Nunito"],
+                        "title": ["Karla"],
+                        "label": ["Karla"]
+                    },
+                    "fontSize": {
+                        "small": ["14px", { "lineHeight": "1.5", "fontWeight": "400" }],
+                        "headline-mobile": ["24px", { "lineHeight": "1.3", "fontWeight": "400" }],
+                        "display-mobile": ["32px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "display": ["36px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "code": ["14px", { "lineHeight": "1.5", "fontWeight": "400" }],
+                        "body": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline": ["28px", { "lineHeight": "1.3", "fontWeight": "400" }],
+                        "title": ["20px", { "lineHeight": "1.4", "fontWeight": "600" }],
+                        "label": ["12px", { "lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "500" }]
+                    }
+                }
+            }
+        }
+    }catch(_e){}</script></head><body class="bg-surface font-body text-body text-on-surface antialiased min-h-screen flex">
+<!-- SideNavBar -->
+<aside class="hidden md:flex flex-col fixed left-0 top-0 h-full border-r border-outline-variant bg-surface-container dark:bg-inverse-surface w-64 shadow-sm z-40">
+<!-- Header -->
+<div class="p-lg border-b border-outline-variant flex items-center gap-sm">
+<div class="w-10 h-10 rounded-full overflow-hidden bg-primary-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-on-primary-container" data-icon="restaurant" data-original-icon="restaurant">restaurant</span>
+</div>
+<div>
+<h2 class="font-headline text-headline font-bold text-primary dark:text-inverse-primary">Table Admin</h2>
+<p class="font-label text-label text-on-surface-variant">Terminal #01</p>
+</div>
+</div>
+<!-- Navigation Tabs -->
+<nav class="flex-1 overflow-y-auto py-sm px-sm flex flex-col gap-xs">
+<a class="flex items-center gap-sm px-md py-sm bg-primary-container text-on-primary-container rounded-lg font-label text-label transition-transform scale-98 active:scale-95" href="#">
+<span class="material-symbols-outlined" data-icon="dashboard" data-weight="fill">dashboard</span>
+                Dashboard
+            </a>
+<a class="flex items-center gap-sm px-md py-sm text-on-surface-variant hover:bg-surface-container-high font-label text-label hover:bg-surface-container-highest transition-all scale-98 active:scale-95 rounded-lg" href="#">
+<span class="material-symbols-outlined" data-icon="receipt_long">receipt_long</span>
+                Orders
+            </a>
+<a class="flex items-center gap-sm px-md py-sm text-on-surface-variant hover:bg-surface-container-high font-label text-label hover:bg-surface-container-highest transition-all scale-98 active:scale-95 rounded-lg" href="#">
+<span class="material-symbols-outlined" data-icon="verified_user">verified_user</span>
+                Verification
+            </a>
+<a class="flex items-center gap-sm px-md py-sm text-on-surface-variant hover:bg-surface-container-high font-label text-label hover:bg-surface-container-highest transition-all scale-98 active:scale-95 rounded-lg" href="#">
+<span class="material-symbols-outlined" data-icon="restaurant_menu">restaurant_menu</span>
+                Menu
+            </a>
+<a class="flex items-center gap-sm px-md py-sm text-on-surface-variant hover:bg-surface-container-high font-label text-label hover:bg-surface-container-highest transition-all scale-98 active:scale-95 rounded-lg" href="#">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+                Settings
+            </a>
+</nav>
+<!-- CTA & Footer -->
+<div class="p-sm mt-auto border-t border-outline-variant">
+<button class="w-full bg-primary text-on-primary py-sm px-md rounded-lg font-label text-label hover:bg-primary-fixed-dim transition-colors mb-sm shadow-sm flex items-center justify-center gap-xs">
+<span class="material-symbols-outlined text-small" data-icon="queue">queue</span>
+                View Live Queue
+            </button>
+<nav class="flex flex-col gap-xs">
+<a class="flex items-center gap-sm px-md py-sm text-on-surface-variant hover:bg-surface-container-high font-label text-label hover:bg-surface-container-highest transition-all rounded-lg" href="#">
+<span class="material-symbols-outlined" data-icon="help">help</span>
+                    Support
+                </a>
+<a class="flex items-center gap-sm px-md py-sm text-on-surface-variant hover:bg-surface-container-high font-label text-label hover:bg-surface-container-highest transition-all rounded-lg" href="#">
+<span class="material-symbols-outlined" data-icon="logout">logout</span>
+                    Logout
+                </a>
+</nav>
+</div>
+</aside>
+<!-- Main Content Area -->
+<main class="flex-1 md:ml-64 bg-background min-h-screen">
+<!-- TopNavBar (Mobile Only) -->
+<header class="md:hidden sticky top-0 z-50 flex justify-between items-center px-lg py-sm w-full bg-surface dark:bg-inverse-surface border-b border-outline-variant dark:border-outline">
+<div class="font-headline text-headline font-bold text-primary dark:text-inverse-primary">
+                DineFlow
+            </div>
+<div class="flex items-center gap-sm text-primary dark:text-inverse-primary">
+<button class="p-xs rounded-full hover:bg-surface-container-low dark:hover:bg-surface-variant transition-colors cursor-pointer active:opacity-80">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+</button>
+<button class="p-xs rounded-full hover:bg-surface-container-low dark:hover:bg-surface-variant transition-colors cursor-pointer active:opacity-80">
+<span class="material-symbols-outlined" data-icon="account_circle">account_circle</span>
+</button>
+</div>
+</header>
+<div class="p-lg md:p-margin-desktop max-w-7xl mx-auto space-y-lg">
+<!-- Page Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-sm mb-xl">
+<div>
+<h1 class="font-display text-display text-on-surface">Overview</h1>
+<p class="font-body text-body text-on-surface-variant mt-xs">Here's what's happening at your restaurant today.</p>
+</div>
+<div class="text-right">
+<p class="font-label text-label text-on-surface-variant uppercase tracking-wider">Date</p>
+<p class="font-title text-title text-on-surface">Oct 24, 2023</p>
+</div>
+</div>
+<!-- KPI Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-md">
+<!-- Card 1 -->
+<div class="bg-card rounded-xl p-md border border-outline-variant shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+<div class="absolute -right-6 -top-6 w-24 h-24 bg-primary-container rounded-full opacity-20 group-hover:scale-110 transition-transform"></div>
+<div class="flex justify-between items-start mb-sm relative z-10">
+<p class="font-label text-label text-on-surface-variant uppercase">Órdenes de Hoy</p>
+<span class="material-symbols-outlined text-primary" data-icon="shopping_bag">shopping_bag</span>
+</div>
+<div class="relative z-10">
+<h3 class="font-display text-display text-on-surface">142</h3>
+<div class="flex items-center gap-xs mt-xs text-primary">
+<span class="material-symbols-outlined text-small" data-icon="trending_up">trending_up</span>
+<span class="font-small text-small">+12% vs yesterday</span>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-card rounded-xl p-md border border-outline-variant shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+<div class="absolute -right-6 -top-6 w-24 h-24 bg-secondary-container rounded-full opacity-20 group-hover:scale-110 transition-transform"></div>
+<div class="flex justify-between items-start mb-sm relative z-10">
+<p class="font-label text-label text-on-surface-variant uppercase">Ventas Totales</p>
+<span class="material-symbols-outlined text-secondary" data-icon="payments">payments</span>
+</div>
+<div class="relative z-10">
+<h3 class="font-display text-display text-on-surface">$4,250</h3>
+<div class="flex items-center gap-xs mt-xs text-primary">
+<span class="material-symbols-outlined text-small" data-icon="trending_up">trending_up</span>
+<span class="font-small text-small">+8.5% vs yesterday</span>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-card rounded-xl p-md border border-outline-variant shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group border-error-container">
+<div class="absolute -right-6 -top-6 w-24 h-24 bg-error-container rounded-full opacity-20 group-hover:scale-110 transition-transform"></div>
+<div class="flex justify-between items-start mb-sm relative z-10">
+<p class="font-label text-label text-on-surface-variant uppercase">Pagos Pendientes</p>
+<span class="material-symbols-outlined text-error" data-icon="pending_actions">pending_actions</span>
+</div>
+<div class="relative z-10">
+<h3 class="font-display text-display text-on-surface">8</h3>
+<div class="flex items-center gap-xs mt-xs text-error">
+<span class="material-symbols-outlined text-small" data-icon="warning">warning</span>
+<span class="font-small text-small">Requires attention</span>
+</div>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="bg-card rounded-xl p-md border border-outline-variant shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+<div class="absolute -right-6 -top-6 w-24 h-24 bg-tertiary-container rounded-full opacity-20 group-hover:scale-110 transition-transform"></div>
+<div class="flex justify-between items-start mb-sm relative z-10">
+<p class="font-label text-label text-on-surface-variant uppercase">Órdenes en Progreso</p>
+<span class="material-symbols-outlined text-tertiary-container" data-icon="local_dining">local_dining</span>
+</div>
+<div class="relative z-10">
+<h3 class="font-display text-display text-on-surface">24</h3>
+<div class="flex items-center gap-xs mt-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-small" data-icon="schedule">schedule</span>
+<span class="font-small text-small">Avg prep time: 18m</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Bento Grid Layout for Main Content -->
+<div class="bg-error-container/20 rounded-xl border border-error-container/50 shadow-sm p-lg">
+<div class="flex items-center gap-sm mb-md">
+<span class="material-symbols-outlined text-error" data-icon="error">error</span>
+<h2 class="font-title text-title text-on-surface">Pending Payments (Action Required)</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-md">
+<!-- Pending Order Item -->
+<div class="bg-card rounded-lg p-md border border-outline-variant shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-start mb-xs">
+<h4 class="font-title text-title text-on-surface">Order #4092</h4>
+<span class="bg-error-container text-on-error-container px-2 py-0.5 rounded font-label text-label">Pending</span>
+</div>
+<p class="font-small text-small text-on-surface-variant mb-md">Table 22 • 4 items • Transfer</p>
+<p class="font-headline text-headline text-on-surface mb-md">$85.50</p>
+</div>
+<div class="flex gap-sm">
+<button class="flex-1 bg-primary text-on-primary py-2 rounded-lg font-label text-label hover:bg-primary-fixed-dim transition-colors flex items-center justify-center gap-xs">
+<span class="material-symbols-outlined text-small" data-icon="check_circle">check_circle</span>
+                                Verify
+                            </button>
+<button class="flex-1 bg-surface-container text-error py-2 rounded-lg border border-outline-variant font-label text-label hover:bg-error-container transition-colors flex items-center justify-center gap-xs">
+<span class="material-symbols-outlined text-small" data-icon="cancel">cancel</span>
+                                Reject
+                            </button>
+</div>
+</div>
+<!-- Pending Order Item -->
+<div class="bg-card rounded-lg p-md border border-outline-variant shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-start mb-xs">
+<h4 class="font-title text-title text-on-surface">Order #4093</h4>
+<span class="bg-error-container text-on-error-container px-2 py-0.5 rounded font-label text-label">Pending</span>
+</div>
+<p class="font-small text-small text-on-surface-variant mb-md">Table 05 • 2 items • Cash</p>
+<p class="font-headline text-headline text-on-surface mb-md">$32.00</p>
+</div>
+<div class="flex gap-sm">
+<button class="flex-1 bg-primary text-on-primary py-2 rounded-lg font-label text-label hover:bg-primary-fixed-dim transition-colors flex items-center justify-center gap-xs">
+<span class="material-symbols-outlined text-small" data-icon="check_circle">check_circle</span>
+                                Verify
+                            </button>
+<button class="flex-1 bg-surface-container text-error py-2 rounded-lg border border-outline-variant font-label text-label hover:bg-error-container transition-colors flex items-center justify-center gap-xs">
+<span class="material-symbols-outlined text-small" data-icon="cancel">cancel</span>
+                                Reject
+                            </button>
+</div>
+</div>
+</div>
+</div><div class="grid grid-cols-1 lg:grid-cols-3 gap-md">
+<!-- Main Chart Area (Spans 2 columns on lg) -->
+<div class="lg:col-span-2 bg-card rounded-xl border border-outline-variant shadow-sm p-lg flex flex-col">
+<div class="flex justify-between items-center mb-md">
+<h2 class="font-title text-title text-on-surface">Order Status Distribution</h2>
+<button class="p-xs rounded-lg hover:bg-surface-container-low transition-colors text-on-surface-variant">
+<span class="material-symbols-outlined" data-icon="more_vert">more_vert</span>
+</button>
+</div>
+<!-- Simulated Donut Chart Area -->
+<div class="flex-1 flex items-center justify-center min-h-[300px] relative">
+<!-- CSS Donut Representation -->
+<div class="relative w-48 h-48 rounded-full" style="background: conic-gradient(
+                            #7c3aed 0% 45%, 
+                            #6b38d4 45% 75%, 
+                            #ccc3d8 75% 90%, 
+                            #dfd7e6 90% 100%
+                        );">
+<div class="absolute inset-4 bg-card rounded-full flex flex-col items-center justify-center">
+<span class="font-display text-display text-on-surface">142</span>
+<span class="font-label text-label text-on-surface-variant uppercase">Total</span>
+</div>
+</div>
+<!-- Legend -->
+<div class="absolute right-0 top-1/2 -translate-y-1/2 flex flex-col gap-sm">
+<div class="flex items-center gap-xs">
+<div class="w-3 h-3 rounded-full bg-primary-container"></div>
+<span class="font-small text-small text-on-surface">Completed (45%)</span>
+</div>
+<div class="flex items-center gap-xs">
+<div class="w-3 h-3 rounded-full bg-secondary"></div>
+<span class="font-small text-small text-on-surface">Preparing (30%)</span>
+</div>
+<div class="flex items-center gap-xs">
+<div class="w-3 h-3 rounded-full bg-outline-variant"></div>
+<span class="font-small text-small text-on-surface">New (15%)</span>
+</div>
+<div class="flex items-center gap-xs">
+<div class="w-3 h-3 rounded-full bg-surface-dim"></div>
+<span class="font-small text-small text-on-surface">Canceled (10%)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Recent Activity Feed -->
+<div class="bg-card rounded-xl border border-outline-variant shadow-sm p-lg flex flex-col h-[400px]">
+<div class="flex justify-between items-center mb-md">
+<h2 class="font-title text-title text-on-surface">Recent Activity</h2>
+<a class="font-label text-label text-primary hover:underline" href="#">View All</a>
+</div>
+<div class="flex-1 overflow-y-auto pr-sm space-y-md">
+<div class="flex gap-sm">
+<div class="mt-1 flex-shrink-0">
+<div class="w-2 h-2 rounded-full bg-primary mt-1.5 ring-4 ring-primary-container/30"></div>
+</div>
+<div>
+<p class="font-small text-small text-on-surface"><span class="font-semibold">Table 12</span> order ready for pickup.</p>
+<p class="font-label text-label text-on-surface-variant mt-xs">2 mins ago</p>
+</div>
+</div>
+<div class="flex gap-sm">
+<div class="mt-1 flex-shrink-0">
+<div class="w-2 h-2 rounded-full bg-secondary mt-1.5 ring-4 ring-secondary-container/30"></div>
+</div>
+<div>
+<p class="font-small text-small text-on-surface"><span class="font-semibold">Table 4</span> placed a new order ($45.00).</p>
+<p class="font-label text-label text-on-surface-variant mt-xs">15 mins ago</p>
+</div>
+</div>
+<div class="flex gap-sm">
+<div class="mt-1 flex-shrink-0">
+<div class="w-2 h-2 rounded-full bg-outline mt-1.5"></div>
+</div>
+<div>
+<p class="font-small text-small text-on-surface">Inventory alert: Low stock on Tomatoes.</p>
+<p class="font-label text-label text-on-surface-variant mt-xs">1 hour ago</p>
+</div>
+</div>
+<div class="flex gap-sm">
+<div class="mt-1 flex-shrink-0">
+<div class="w-2 h-2 rounded-full bg-error mt-1.5 ring-4 ring-error-container/30"></div>
+</div>
+<div>
+<p class="font-small text-small text-on-surface">Payment failed for <span class="font-semibold">Table 8</span>.</p>
+<p class="font-label text-label text-on-surface-variant mt-xs">2 hours ago</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Priority Action Widget -->
+</div>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-md pb-safe pt-xs md:hidden bg-surface dark:bg-inverse-surface rounded-t-xl shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)]">
+<a class="flex flex-col items-center justify-center text-on-surface-variant tap-highlight-transparent active:scale-95 duration-150 p-sm" href="#">
+<span class="material-symbols-outlined" data-icon="restaurant">restaurant</span>
+<span class="font-label-mobile text-label-mobile mt-1">Menu</span>
+</a>
+</nav></body></html>

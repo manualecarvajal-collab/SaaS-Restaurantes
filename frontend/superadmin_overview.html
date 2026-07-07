@@ -1,0 +1,412 @@
+<!DOCTYPE html><html class="light" lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>SuperAdmin Global Dashboard</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700&amp;family=Nunito:wght@400;600;700;800&amp;family=JetBrains+Mono:wght@400&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary-fixed": "#23005c",
+                    "on-tertiary-container": "#ffe0cd",
+                    "on-primary-fixed": "#25005a",
+                    "secondary": "#6b38d4",
+                    "on-error-container": "#93000a",
+                    "on-surface": "#1d1a24",
+                    "inverse-surface": "#332f39",
+                    "surface-container-low": "#f9f1ff",
+                    "surface-container-lowest": "#ffffff",
+                    "background": "#F9FAFB",
+                    "on-secondary-fixed-variant": "#5516be",
+                    "on-primary": "#ffffff",
+                    "primary-container": "#7c3aed",
+                    "on-surface-variant": "#4a4455",
+                    "on-tertiary-fixed": "#301400",
+                    "outline-variant": "#ccc3d8",
+                    "inverse-primary": "#d2bbff",
+                    "surface-dim": "#dfd7e6",
+                    "surface-bright": "#fef7ff",
+                    "on-secondary-container": "#fffbff",
+                    "primary-fixed-dim": "#d2bbff",
+                    "outline": "#7b7487",
+                    "secondary-container": "#8455ef",
+                    "surface-container-highest": "#e8dfee",
+                    "primary-fixed": "#eaddff",
+                    "tertiary-fixed": "#ffdcc6",
+                    "on-tertiary-fixed-variant": "#713700",
+                    "accent": "#6D28D9",
+                    "on-primary-fixed-variant": "#5a00c6",
+                    "on-background": "#1d1a24",
+                    "surface-tint": "#732ee4",
+                    "secondary-fixed": "#e9ddff",
+                    "surface": "#fef7ff",
+                    "border": "#E5E7EB",
+                    "error": "#ba1a1a",
+                    "inverse-on-surface": "#f6eefc",
+                    "card": "#FFFFFF",
+                    "destructive": "#DC2626",
+                    "surface-variant": "#e8dfee",
+                    "tertiary": "#7d3d00",
+                    "surface-container": "#f3ebfa",
+                    "foreground": "#111827",
+                    "error-container": "#ffdad6",
+                    "muted": "#F3F4F6",
+                    "on-error": "#ffffff",
+                    "on-primary-container": "#ede0ff",
+                    "on-secondary": "#ffffff",
+                    "primary": "#630ed4",
+                    "on-tertiary": "#ffffff",
+                    "surface-container-high": "#ede5f4",
+                    "tertiary-fixed-dim": "#ffb784",
+                    "secondary-fixed-dim": "#d0bcff",
+                    "tertiary-container": "#a15100",
+                    "muted-foreground": "#6B7280"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "sm": "8px",
+                    "2xl": "48px",
+                    "xs": "4px",
+                    "margin-desktop": "32px",
+                    "base": "4px",
+                    "gutter": "16px",
+                    "xl": "32px",
+                    "lg": "24px",
+                    "margin-mobile": "16px",
+                    "md": "16px"
+            },
+            "fontFamily": {
+                    "small": ["Karla"],
+                    "headline-mobile": ["Nunito"],
+                    "display-mobile": ["Nunito"],
+                    "display": ["Nunito"],
+                    "code": ["JetBrains Mono"],
+                    "body": ["Karla"],
+                    "headline": ["Nunito"],
+                    "title": ["Karla"],
+                    "label": ["Karla"]
+            },
+            "fontSize": {
+                    "small": ["14px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                    "headline-mobile": ["24px", {"lineHeight": "1.3", "fontWeight": "400"}],
+                    "display-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "display": ["36px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "code": ["14px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                    "body": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline": ["28px", {"lineHeight": "1.3", "fontWeight": "400"}],
+                    "title": ["20px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "label": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "500"}]
+            }
+          },
+        }
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+          font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .icon-fill {
+           font-variation-settings: 'FILL' 1;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body min-h-screen flex">
+<!-- SideNavBar -->
+<nav class="hidden md:flex flex-col fixed left-0 top-0 h-full border-r border-outline-variant w-64 bg-surface-container shadow-sm z-40">
+<!-- Brand / Header -->
+<div class="p-lg border-b border-outline-variant flex items-center gap-md">
+<div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-on-primary font-bold">
+                SA
+            </div>
+<div>
+<h1 class="font-headline text-headline font-bold text-primary">Table Admin</h1>
+<p class="font-label text-label text-on-surface-variant">Admin Workspace</p>
+<p class="font-label text-label text-on-surface-variant opacity-75">Terminal #01</p>
+</div>
+</div>
+<!-- Navigation Links -->
+<div class="flex-1 overflow-y-auto py-md px-sm flex flex-col gap-sm">
+<a class="flex items-center gap-md px-md py-sm bg-primary-container text-on-primary-container rounded-lg font-label text-label hover:bg-surface-container-highest transition-all scale-98 active:scale-95 duration-150" href="#">
+<span class="material-symbols-outlined icon-fill">dashboard</span>
+                Global Overview
+            </a>
+<a class="flex items-center gap-md px-md py-sm text-on-surface-variant hover:bg-surface-container-high rounded-lg font-label text-label hover:bg-surface-container-highest transition-all scale-98 active:scale-95 duration-150" href="#">
+<span class="material-symbols-outlined">restaurant</span>
+                Restaurants
+            </a>
+<a class="flex items-center gap-md px-md py-sm text-on-surface-variant hover:bg-surface-container-high rounded-lg font-label text-label hover:bg-surface-container-highest transition-all scale-98 active:scale-95 duration-150" href="#">
+<span class="material-symbols-outlined">payments</span>
+                Commissions
+            </a>
+<a class="flex items-center gap-md px-md py-sm text-on-surface-variant hover:bg-surface-container-high rounded-lg font-label text-label hover:bg-surface-container-highest transition-all scale-98 active:scale-95 duration-150" href="#">
+<span class="material-symbols-outlined">build</span>
+                Provisioning
+            </a>
+</div>
+<!-- Footer Actions -->
+<div class="p-md border-t border-outline-variant flex flex-col gap-sm">
+<button class="w-full py-sm bg-primary text-on-primary rounded-lg font-title text-title text-sm hover:bg-secondary-container transition-colors">
+                View Live Queue
+            </button>
+<a class="flex items-center gap-md px-md py-sm text-on-surface-variant hover:bg-surface-container-high rounded-lg font-label text-label transition-colors" href="#">
+<span class="material-symbols-outlined">help</span>
+                Support
+            </a>
+<a class="flex items-center gap-md px-md py-sm text-on-surface-variant hover:bg-surface-container-high rounded-lg font-label text-label transition-colors" href="#">
+<span class="material-symbols-outlined">logout</span>
+                Logout
+            </a>
+</div>
+</nav>
+<!-- Main Content Area -->
+<main class="flex-1 md:ml-64 p-margin-mobile md:p-margin-desktop bg-background min-h-screen pb-32 md:pb-margin-desktop">
+<!-- Header -->
+<header class="mb-xl flex flex-col md:flex-row md:items-end justify-between gap-md border-b border-outline-variant pb-md">
+<div>
+<h2 class="font-display text-display text-primary font-bold">Global Dashboard</h2>
+<p class="font-body text-body text-on-surface-variant mt-sm">Comprehensive overview of platform performance and restaurant metrics.</p>
+</div>
+<div class="flex items-center gap-sm">
+<span class="text-on-surface-variant font-label text-label">Last updated: Today, 09:41 AM</span>
+<button class="p-sm rounded-full hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-primary">refresh</span>
+</button>
+</div>
+</header>
+<!-- KPI Grid (Bento Style) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter mb-xl">
+<!-- KPI 1 -->
+<div class="bg-card rounded-xl p-lg shadow-sm border border-outline-variant relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="absolute -right-4 -top-4 w-24 h-24 bg-primary-container rounded-full opacity-20 group-hover:scale-150 transition-transform duration-500 ease-out"></div>
+<div class="flex justify-between items-start mb-md">
+<p class="font-label text-label text-on-surface-variant uppercase tracking-wider">Total Restaurants</p>
+<span class="material-symbols-outlined text-primary">storefront</span>
+</div>
+<h3 class="font-display text-display text-on-surface">1,248</h3>
+<div class="flex items-center mt-sm gap-xs">
+<span class="material-symbols-outlined text-primary text-sm">trending_up</span>
+<span class="font-small text-small text-primary font-medium">+12 this week</span>
+</div>
+</div>
+<!-- KPI 2 -->
+<div class="bg-card rounded-xl p-lg shadow-sm border border-outline-variant relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="absolute -right-4 -top-4 w-24 h-24 bg-secondary-fixed rounded-full opacity-20 group-hover:scale-150 transition-transform duration-500 ease-out"></div>
+<div class="flex justify-between items-start mb-md">
+<p class="font-label text-label text-on-surface-variant uppercase tracking-wider">Total Global Revenue</p>
+<span class="material-symbols-outlined text-secondary">account_balance_wallet</span>
+</div>
+<h3 class="font-display text-display text-on-surface">$4.2M</h3>
+<div class="flex items-center mt-sm gap-xs">
+<span class="material-symbols-outlined text-secondary text-sm">trending_up</span>
+<span class="font-small text-small text-secondary font-medium">+8.4% vs last month</span>
+</div>
+</div>
+<!-- KPI 3 -->
+<div class="bg-card rounded-xl p-lg shadow-sm border border-outline-variant relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="absolute -right-4 -top-4 w-24 h-24 bg-tertiary-fixed rounded-full opacity-20 group-hover:scale-150 transition-transform duration-500 ease-out"></div>
+<div class="flex justify-between items-start mb-md">
+<p class="font-label text-label text-on-surface-variant uppercase tracking-wider">Platform Commissions</p>
+<span class="material-symbols-outlined text-tertiary">monetization_on</span>
+</div>
+<h3 class="font-display text-display text-on-surface">$420k</h3>
+<div class="flex items-center mt-sm gap-xs">
+<span class="material-symbols-outlined text-tertiary text-sm">trending_up</span>
+<span class="font-small text-small text-tertiary font-medium">+5.2% vs last month</span>
+</div>
+</div>
+<!-- KPI 4 -->
+<div class="bg-primary rounded-xl p-lg shadow-sm border border-primary-fixed-dim relative overflow-hidden group hover:shadow-md transition-shadow text-on-primary">
+<div class="absolute -right-4 -top-4 w-24 h-24 bg-white rounded-full opacity-10 group-hover:scale-150 transition-transform duration-500 ease-out"></div>
+<div class="flex justify-between items-start mb-md">
+<p class="font-label text-label text-on-primary opacity-80 uppercase tracking-wider">Monthly Growth</p>
+<span class="material-symbols-outlined text-on-primary">monitoring</span>
+</div>
+<h3 class="font-display text-display text-on-primary">+14.2%</h3>
+<div class="flex items-center mt-sm gap-xs">
+<span class="material-symbols-outlined text-on-primary text-sm opacity-80">check_circle</span>
+<span class="font-small text-small text-on-primary opacity-80 font-medium">Target exceeded by 2%</span>
+</div>
+</div>
+</div>
+<!-- Restaurants Overview Table Section -->
+<section class="bg-card rounded-xl shadow-sm border border-outline-variant overflow-hidden">
+<div class="p-lg border-b border-outline-variant flex flex-col md:flex-row justify-between md:items-center gap-md bg-surface-bright">
+<div>
+<h3 class="font-headline text-headline text-on-surface">Restaurants Overview</h3>
+<p class="font-small text-small text-on-surface-variant">Manage and monitor all partnered restaurants.</p>
+</div>
+<div class="flex flex-col sm:flex-row gap-sm">
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline">search</span>
+<input class="pl-10 pr-4 py-2 bg-background border border-outline-variant rounded-lg font-small text-small focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary w-full sm:w-64 transition-all" placeholder="Search restaurants..." type="text">
+</div>
+<button class="flex items-center justify-center gap-sm px-md py-2 bg-surface-container-high hover:bg-surface-container-highest text-on-surface border border-outline-variant rounded-lg font-label text-label transition-colors">
+<span class="material-symbols-outlined text-sm">filter_list</span>
+                        Filter
+                    </button>
+</div>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low border-b border-outline-variant">
+<th class="px-lg py-md font-label text-label text-on-surface-variant uppercase tracking-wider">Restaurant Name</th>
+<th class="px-lg py-md font-label text-label text-on-surface-variant uppercase tracking-wider hidden sm:table-cell">Slug</th>
+<th class="px-lg py-md font-label text-label text-on-surface-variant uppercase tracking-wider text-right">Total Orders</th>
+<th class="px-lg py-md font-label text-label text-on-surface-variant uppercase tracking-wider text-right">Commissions</th>
+<th class="px-lg py-md font-label text-label text-on-surface-variant uppercase tracking-wider text-center">Status</th>
+<th class="px-lg py-md font-label text-label text-on-surface-variant uppercase tracking-wider text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="font-body text-body divide-y divide-outline-variant">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-lowest transition-colors group">
+<td class="px-lg py-md">
+<div class="flex items-center gap-md">
+<div class="w-10 h-10 rounded bg-surface-container-high flex items-center justify-center text-primary font-title overflow-hidden">
+<img alt="" class="w-full h-full object-cover" data-alt="A modern, high-end restaurant logo featuring a stylized fork and knife in minimalist black on a white background, soft lighting, professional corporate design, clean lines, subtle shadow." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3dF1u5ARyHkPI7fu1JCMKlrZmmImXmJl-exvFmCLWoXIZtjDMjk-SgZoHhS2Z8vGI_-Y-OlUEgYU0DgyXQN9vsXoze6MQOuf5It6n2LakopPwmclBO45nNDmCUKJ5H5jmucASSobLl8YQOAI3nbrtpWOrXdpVZqHlbe4-oJpJ3srVtfcjJmwVooTWk_s_9Sycxg9MCu7aMfE1L01s1SC56uoquBjRFpMd_H0BhoFU0rkXLy9XolYF2Q9LW-kLyYUktKlX-tA0-Ys">
+</div>
+<div>
+<div class="font-medium text-on-surface">The Prime Cut</div>
+<div class="font-small text-small text-on-surface-variant md:hidden">the-prime-cut</div>
+</div>
+</div>
+</td>
+<td class="px-lg py-md font-code text-code text-on-surface-variant hidden sm:table-cell">the-prime-cut</td>
+<td class="px-lg py-md text-right font-code text-code">12,450</td>
+<td class="px-lg py-md text-right font-code text-code font-medium text-primary">$18,675</td>
+<td class="px-lg py-md text-center">
+<span class="inline-flex items-center px-2 py-1 rounded-full bg-primary-container text-on-primary font-label text-label">Active</span>
+</td>
+<td class="px-lg py-md text-right">
+<button class="p-sm text-outline hover:text-primary transition-colors" title="Edit/Manage">
+<span class="material-symbols-outlined">more_vert</span>
+</button>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-lowest transition-colors group">
+<td class="px-lg py-md">
+<div class="flex items-center gap-md">
+<div class="w-10 h-10 rounded bg-surface-container-high flex items-center justify-center text-primary font-title overflow-hidden">
+<img alt="" class="w-full h-full object-cover" data-alt="An elegant sushi restaurant logo with a minimalist fish icon, navy blue and white color palette, professional modern corporate aesthetic, crisp and clean visual identity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSeQnfoyJHOcYnajFq6HMwVsc3OqKqz2H9b6jSy14vXut7UkJygZ0XCh2ZaB1Ji9CPYSFIpKZ07HF6N-VuDUqCtJi6xj05zkMS5wuvmBKxZjlb_3UQLd0AWcDZeUC74GYfPf431bo8LmJRNW0noi7v59RGNVI2JUV8TEOMtzlSN9Wm2q3n4lignmTq1hDYVois5noxNKfMpdpFE-JsgkSZj8PpaVqf5wYm6n_8X-Mie0W2vcJI_U29SS5QrFoUlEoUzruk5V6Tcp4">
+</div>
+<div>
+<div class="font-medium text-on-surface">Ocean Blue Sushi</div>
+<div class="font-small text-small text-on-surface-variant md:hidden">ocean-blue-sushi</div>
+</div>
+</div>
+</td>
+<td class="px-lg py-md font-code text-code text-on-surface-variant hidden sm:table-cell">ocean-blue-sushi</td>
+<td class="px-lg py-md text-right font-code text-code">8,204</td>
+<td class="px-lg py-md text-right font-code text-code font-medium text-primary">$12,306</td>
+<td class="px-lg py-md text-center">
+<span class="inline-flex items-center px-2 py-1 rounded-full bg-primary-container text-on-primary font-label text-label">Active</span>
+</td>
+<td class="px-lg py-md text-right">
+<button class="p-sm text-outline hover:text-primary transition-colors" title="Edit/Manage">
+<span class="material-symbols-outlined">more_vert</span>
+</button>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-lowest transition-colors group">
+<td class="px-lg py-md">
+<div class="flex items-center gap-md">
+<div class="w-10 h-10 rounded bg-surface-container-high flex items-center justify-center text-primary font-title overflow-hidden">
+<div class="w-full h-full bg-surface-variant flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined">local_pizza</span>
+</div>
+</div>
+<div>
+<div class="font-medium text-on-surface">Luigi's Pizzeria</div>
+<div class="font-small text-small text-on-surface-variant md:hidden">luigis-pizzeria</div>
+</div>
+</div>
+</td>
+<td class="px-lg py-md font-code text-code text-on-surface-variant hidden sm:table-cell">luigis-pizzeria</td>
+<td class="px-lg py-md text-right font-code text-code">4,120</td>
+<td class="px-lg py-md text-right font-code text-code font-medium text-primary">$4,120</td>
+<td class="px-lg py-md text-center">
+<span class="inline-flex items-center px-2 py-1 rounded-full bg-tertiary text-on-tertiary font-label text-label">Inactive</span>
+</td>
+<td class="px-lg py-md text-right">
+<button class="p-sm text-outline hover:text-primary transition-colors" title="Edit/Manage">
+<span class="material-symbols-outlined">more_vert</span>
+</button>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container-lowest transition-colors group">
+<td class="px-lg py-md">
+<div class="flex items-center gap-md">
+<div class="w-10 h-10 rounded bg-surface-container-high flex items-center justify-center text-primary font-title overflow-hidden">
+<img alt="" class="w-full h-full object-cover" data-alt="A sophisticated cafe logo, featuring a minimalist coffee bean design, warm neutral colors on a white background, corporate modern style, clean and professional." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUvctxVErNsKA7gtxUEkRysCDH618O8rGXE7ernldQPaKwyQG-cfOhU0m-FFpaYuIWwueYS_0-UhPNXFL368xDE-HCM4QzZ6UVeBziG-kPaVXW_HS6kwa7FxnbCa9IcL1_kZYE9nP5FqjhfXZyYNy5ezkFOkI7q1Xb_-VwKOnsbbVHTRL98sl2FFJSby8ajd3NC01Lb3Wi_SZs3A8T9MOkIJWMkP20pOkJMROB-RI-J3COzHw8OhhXtTw58zpysnWDj1sjX3B3YP0">
+</div>
+<div>
+<div class="font-medium text-on-surface">The Grind Cafe</div>
+<div class="font-small text-small text-on-surface-variant md:hidden">the-grind-cafe</div>
+</div>
+</div>
+</td>
+<td class="px-lg py-md font-code text-code text-on-surface-variant hidden sm:table-cell">the-grind-cafe</td>
+<td class="px-lg py-md text-right font-code text-code">15,600</td>
+<td class="px-lg py-md text-right font-code text-code font-medium text-primary">$7,800</td>
+<td class="px-lg py-md text-center">
+<span class="inline-flex items-center px-2 py-1 rounded-full bg-primary-container text-on-primary font-label text-label">Active</span>
+</td>
+<td class="px-lg py-md text-right">
+<button class="p-sm text-outline hover:text-primary transition-colors" title="Edit/Manage">
+<span class="material-symbols-outlined">more_vert</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Pagination (Simple) -->
+<div class="p-md border-t border-outline-variant bg-surface-bright flex justify-between items-center">
+<span class="font-small text-small text-on-surface-variant">Showing 1 to 4 of 1,248</span>
+<div class="flex gap-xs">
+<button class="px-sm py-1 border border-outline-variant rounded bg-card text-on-surface-variant hover:bg-surface-container-low transition-colors disabled:opacity-50" disabled="">
+<span class="material-symbols-outlined text-sm">chevron_left</span>
+</button>
+<button class="px-sm py-1 border border-outline-variant rounded bg-card text-on-surface hover:bg-surface-container-low transition-colors">
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Mobile BottomNavBar (Hidden on md+) -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-md pb-safe pt-xs md:hidden shadow-lg bg-surface dark:bg-inverse-surface rounded-t-xl pb-4">
+<a class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-full px-4 py-1 tap-highlight-transparent active:scale-95 duration-150 active:bg-surface-container-high" href="#">
+<span class="material-symbols-outlined icon-fill">dashboard</span>
+<span class="font-label-mobile text-label-mobile mt-1">Overview</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant tap-highlight-transparent active:scale-95 duration-150 active:bg-surface-container-high px-4 py-1" href="#">
+<span class="material-symbols-outlined">restaurant</span>
+<span class="font-label-mobile text-label-mobile mt-1">Restros</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant tap-highlight-transparent active:scale-95 duration-150 active:bg-surface-container-high px-4 py-1" href="#">
+<span class="material-symbols-outlined">payments</span>
+<span class="font-label-mobile text-label-mobile mt-1">Finance</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant tap-highlight-transparent active:scale-95 duration-150 active:bg-surface-container-high px-4 py-1" href="#">
+<span class="material-symbols-outlined">settings</span>
+<span class="font-label-mobile text-label-mobile mt-1">Config</span>
+</a>
+</nav>
+
+
+</body></html>
