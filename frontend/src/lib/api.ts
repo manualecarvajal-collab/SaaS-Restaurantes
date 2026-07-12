@@ -38,6 +38,43 @@ async function request<T>(
   return res.json();
 }
 
+async function uploadFile<T>(
+  endpoint: string,
+  file: File,
+  extraFields?: Record<string, string>
+): Promise<T> {
+  const token =
+    typeof window !== "undefined" ? localStorage.getItem("token") : null;
+
+  const formData = new FormData();
+  formData.append("file", file);
+  if (extraFields) {
+    for (const [key, value] of Object.entries(extraFields)) {
+      formData.append(key, value);
+    }
+  }
+
+  const headers: HeadersInit = {
+    ...(token ? { Authorization: `Bearer ${token}` } : {}),
+  };
+
+  const res = await fetch(`${API_BASE_URL}${endpoint}`, {
+    method: "POST",
+    headers,
+    body: formData,
+  });
+
+  if (!res.ok) {
+    const error = await res.json().catch(() => ({ detail: res.statusText }));
+    throw new ApiError(
+      error.detail || "Request failed",
+      res.status
+    );
+  }
+
+  return res.json();
+}
+
 export const api = {
   get: <T>(endpoint: string) => request<T>(endpoint),
   post: <T>(endpoint: string, body?: unknown) =>
@@ -46,4 +83,6 @@ export const api = {
     request<T>(endpoint, { method: "PATCH", body: JSON.stringify(body) }),
   delete: <T>(endpoint: string) =>
     request<T>(endpoint, { method: "DELETE" }),
+  upload: <T>(endpoint: string, file: File, extraFields?: Record<string, string>) =>
+    uploadFile<T>(endpoint, file, extraFields),
 };

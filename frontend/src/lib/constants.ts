@@ -3,15 +3,7 @@ export const API_BASE_URL =
 
 export const APP_NAME = "SaaS Restaurantes";
 
-export const ORDER_STATUSES = [
-  "PENDING",
-  "PAYMENT_SENT",
-  "CONFIRMED",
-  "PREPARING",
-  "READY",
-  "DELIVERED",
-  "CANCELLED",
-] as const;
+export const ORDER_STATUSES = ["CONFIRMED", "CANCELLED"] as const;
 
 export type OrderStatus = (typeof ORDER_STATUSES)[number];
 

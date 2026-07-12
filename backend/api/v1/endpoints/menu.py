@@ -1,12 +1,12 @@
 import uuid
 
-from fastapi import APIRouter, Depends, HTTPException, status
+from fastapi import APIRouter, Depends, File, HTTPException, UploadFile, status
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from api.deps import get_current_admin
 from core.database import get_db
 from schemas.menu_category import MenuCategoryCreate, MenuCategoryResponse, MenuCategoryUpdate
-from schemas.menu_item import MenuItemCreate, MenuItemResponse, MenuItemUpdate
+from schemas.menu_item import MenuItemCreate, MenuItemImportResult, MenuItemResponse, MenuItemUpdate
 from schemas.profile import ProfileResponse
 from services.menu import MenuService
 
@@ -156,3 +156,23 @@ async def delete_item(
     deleted = await service.delete_item(item_id)
     if not deleted:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Item not found")
+
+
+@router.post("/items/import", response_model=MenuItemImportResult)
+async def import_items(
+    restaurant_id: str,
+    file: UploadFile = File(...),
+    db: AsyncSession = Depends(get_db),
+    _: ProfileResponse = Depends(get_current_admin),
+):
+    if not file.filename or not (file.filename.endswith(".csv") or file.filename.endswith(".xlsx")):
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail="Archivo no soportado. Usa .csv o .xlsx",
+        )
+    service = MenuService(db)
+    try:
+        result = await service.import_items(uuid.UUID(restaurant_id), file)
+        return result
+    except ValueError as e:
+        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=str(e))

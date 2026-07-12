@@ -1,11 +1,8 @@
 import uuid
 
-from sqlalchemy import update as sa_update
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from core.security import get_password_hash
-from models.profile import Profile
-
+from core.supabase import create_auth_user
 from repositories.dashboard import DashboardRepository
 from schemas.dashboard import (
     GlobalDashboardResponse,
@@ -16,8 +13,10 @@ from schemas.dashboard import (
     RestaurantDashboardResponse,
     RestaurantSummary,
 )
+from schemas.profile import ProfileCreate
 from schemas.restaurant import RestaurantCreate
 from schemas.table import TableCreate
+from services.profile import ProfileService
 from services.restaurant import RestaurantService
 from services.table import TableService
 
@@ -59,25 +58,33 @@ class DashboardService:
     async def provision_restaurant(self, data: ProvisionRequest) -> ProvisionResponse:
         restaurant_service = RestaurantService(self.db)
         table_service = TableService(self.db)
+        profile_service = ProfileService(self.db)
 
+        # 1. Create the restaurant
         restaurant = await restaurant_service.create(
             RestaurantCreate(name=data.restaurant_name, slug=data.restaurant_slug)
         )
-        admin_id = uuid.uuid4()
-        hashed = get_password_hash(data.admin_password)
-        from models.profile import Profile
-        admin = Profile(
-            id=admin_id,
+
+        # 2. Create admin user in Supabase Auth
+        auth_user = await create_auth_user(
+            email=data.admin_email,
+            password=data.admin_password,
+            email_confirm=True,
+        )
+        if auth_user is None:
+            raise ValueError(f"Failed to create auth user for {data.admin_email}")
+
+        # 3. Create profile in our database
+        profile_data = ProfileCreate(
+            id=uuid.UUID(auth_user["id"]),
             email=data.admin_email,
             full_name=data.admin_full_name,
-            hashed_password=hashed,
             role="admin",
             restaurant_id=restaurant.id,
-            is_active=True,
         )
-        self.db.add(admin)
-        await self.db.flush()
+        await profile_service.create(profile_data)
 
+        # 4. Create tables
         table_ids = []
         for i in range(1, data.table_count + 1):
             qr_token = uuid.uuid4().hex[:8].upper()
@@ -92,7 +99,7 @@ class DashboardService:
 
         return ProvisionResponse(
             restaurant_id=str(restaurant.id),
-            admin_id=str(admin_id),
+            admin_id=auth_user["id"],
             table_ids=table_ids,
             message=f"Restaurant '{data.restaurant_name}' created with {data.table_count} tables and admin '{data.admin_email}'",
         )

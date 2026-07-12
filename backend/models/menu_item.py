@@ -22,6 +22,7 @@ class MenuItem(PKMixin, TimestampMixin, Base):
     price: Mapped[float] = mapped_column(nullable=False)
     currency: Mapped[str] = mapped_column(String, default="USD")
     image_url: Mapped[str | None] = mapped_column(Text, nullable=True)
+    image_url_2: Mapped[str | None] = mapped_column(Text, nullable=True)
     is_available: Mapped[bool] = mapped_column(Boolean, default=True)
     sort_order: Mapped[int] = mapped_column(Integer, default=0)
 

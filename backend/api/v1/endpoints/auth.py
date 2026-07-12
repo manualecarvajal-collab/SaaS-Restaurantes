@@ -2,6 +2,7 @@ from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from core.database import get_db
+from api.deps import get_current_user
 from schemas.auth import LoginRequest, SignupRequest, Token
 from schemas.profile import ProfileResponse
 from services.auth import AuthService
@@ -21,7 +22,15 @@ async def login(request: LoginRequest, db: AsyncSession = Depends(get_db)):
     return token
 
 
+@router.get("/me", response_model=ProfileResponse)
+async def get_me(current_user: ProfileResponse = Depends(get_current_user)):
+    return current_user
+
+
 @router.post("/signup", response_model=ProfileResponse, status_code=status.HTTP_201_CREATED)
 async def signup(request: SignupRequest, db: AsyncSession = Depends(get_db)):
     service = AuthService(db)
     return await service.signup(request)
+
+
+

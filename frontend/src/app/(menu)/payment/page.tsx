@@ -209,13 +209,13 @@ function PaymentContent() {
           <SheetFooter className="px-4 pb-4">
             <button
               onClick={() => setShowForm(false)}
-              className="flex-1 bg-surface text-muted-foreground rounded-xl h-12 font-medium border border-border hover:bg-muted transition-colors"
+              className="flex-1 bg-surface text-muted-foreground rounded-xl py-4 font-medium border border-border hover:bg-muted transition-colors"
             >
               Volver
             </button>
             <button
               onClick={handleConfirm}
-              className="flex-1 bg-primary text-primary-foreground rounded-xl h-12 font-medium hover:bg-accent transition-colors"
+              className="flex-1 bg-primary text-primary-foreground rounded-xl py-4 font-medium hover:bg-accent transition-colors"
             >
               Confirmar Pago
             </button>

@@ -28,6 +28,12 @@ class AdminCreate(BaseModel):
     restaurant_id: uuid.UUID
 
 
+class SuperAdminCreate(BaseModel):
+    email: str
+    full_name: str
+    password: str
+
+
 class ProfileUpdate(BaseModel):
     full_name: str | None = None
     is_active: bool | None = None

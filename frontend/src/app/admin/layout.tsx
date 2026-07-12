@@ -5,14 +5,13 @@ import { usePathname, useRouter } from "next/navigation";
 import {
   LayoutDashboard,
   Receipt,
-  ShieldCheck,
+  Percent,
   UtensilsCrossed,
   Settings,
   HelpCircle,
   LogOut,
-  Bell,
-  UserCircle,
   ChefHat,
+  ShieldCheck,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useAuthStore } from "@/stores/auth";
@@ -20,7 +19,7 @@ import { useAuthStore } from "@/stores/auth";
 const navItems = [
   { href: "/admin", label: "Dashboard", icon: LayoutDashboard },
   { href: "/admin/orders", label: "Órdenes", icon: Receipt },
-  { href: "/admin/payments", label: "Verificación", icon: ShieldCheck },
+  { href: "/admin/commission", label: "Comisión", icon: Percent },
   { href: "/admin/menu", label: "Menú", icon: UtensilsCrossed },
   { href: "/admin/settings", label: "Configuración", icon: Settings },
 ];
@@ -101,25 +100,8 @@ export default function AdminLayout({
       </aside>
       )}
 
-      {/* Top Bar - Mobile (hidden on login page) */}
-      {pathname !== "/admin/login" && (
-        <header className="md:hidden sticky top-0 z-50 flex justify-between items-center px-4 py-3 w-full bg-surface border-b border-border">
-          <div className="font-heading text-xl font-bold text-primary">
-            {user?.restaurantName ?? "Table Admin"}
-          </div>
-          <div className="flex items-center gap-2 text-primary">
-            <button className="p-1.5 rounded-full hover:bg-surface-container-low transition-colors">
-              <Bell className="size-5" />
-            </button>
-            <button className="p-1.5 rounded-full hover:bg-surface-container-low transition-colors">
-              <UserCircle className="size-5" />
-            </button>
-          </div>
-        </header>
-      )}
-
       {/* Main Content */}
-      <main className={`flex-1 bg-background min-h-screen pb-24 md:pb-8 ${pathname !== "/admin/login" ? "md:ml-64" : ""}`}>
+      <main className={`flex-1 min-w-0 bg-background min-h-screen pb-24 md:pb-8 ${pathname !== "/admin/login" ? "md:ml-64" : ""}`}>
         <div className="p-4 md:p-8 max-w-7xl mx-auto space-y-6">
           {children}
         </div>

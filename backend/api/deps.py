@@ -2,50 +2,44 @@ import uuid
 
 from fastapi import Depends, HTTPException, status
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
-from jose import JWTError, jwt
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from core.config import get_settings
 from core.database import get_db
-from core.security import ALGORITHM
+from core.supabase import get_user_by_token
 from repositories.profile import ProfileRepository
+from schemas.profile import ProfileResponse
 
 security = HTTPBearer()
-settings = get_settings()
 
 
 async def get_current_user(
     credentials: HTTPAuthorizationCredentials = Depends(security),
     db: AsyncSession = Depends(get_db),
-):
+) -> ProfileResponse:
     token = credentials.credentials
-    try:
-        payload = jwt.decode(token, settings.SECRET_KEY, algorithms=[ALGORITHM])
-        user_id = payload.get("sub")
-        if user_id is None:
-            raise HTTPException(
-                status_code=status.HTTP_401_UNAUTHORIZED,
-                detail="Invalid token",
-            )
-    except JWTError:
+
+    # Validate token with Supabase Auth
+    user_data = await get_user_by_token(token)
+    if user_data is None or user_data.get("id") is None:
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED,
-            detail="Invalid token",
+            detail="Invalid or expired token",
         )
 
+    # Get the local profile
     repo = ProfileRepository(db)
-    profile = await repo.get_by_id(uuid.UUID(user_id))
+    profile = await repo.get_by_id(uuid.UUID(user_data["id"]))
     if profile is None:
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND,
-            detail="User not found",
+            detail="User profile not found",
         )
     return profile
 
 
 async def get_current_admin(
-    current_user=Depends(get_current_user),
-):
+    current_user: ProfileResponse = Depends(get_current_user),
+) -> ProfileResponse:
     if current_user.role not in ("admin", "superadmin"):
         raise HTTPException(
             status_code=status.HTTP_403_FORBIDDEN,
@@ -55,8 +49,8 @@ async def get_current_admin(
 
 
 async def get_current_superadmin(
-    current_user=Depends(get_current_user),
-):
+    current_user: ProfileResponse = Depends(get_current_user),
+) -> ProfileResponse:
     if current_user.role != "superadmin":
         raise HTTPException(
             status_code=status.HTTP_403_FORBIDDEN,

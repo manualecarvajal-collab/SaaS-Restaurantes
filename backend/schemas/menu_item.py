@@ -12,6 +12,7 @@ class MenuItemBase(BaseModel):
     price: float
     currency: str = "USD"
     image_url: str | None = None
+    image_url_2: str | None = None
     is_available: bool = True
     sort_order: int = 0
 
@@ -26,6 +27,7 @@ class MenuItemUpdate(BaseModel):
     price: float | None = None
     currency: str | None = None
     image_url: str | None = None
+    image_url_2: str | None = None
     is_available: bool | None = None
     sort_order: int | None = None
     category_id: uuid.UUID | None = None
@@ -37,3 +39,18 @@ class MenuItemResponse(MenuItemBase):
     updated_at: datetime
 
     model_config = {"from_attributes": True}
+
+
+class MenuItemImportRow(BaseModel):
+    name: str
+    price: float
+    description: str | None = None
+    category_name: str
+    image_url: str | None = None
+    image_url_2: str | None = None
+    is_available: bool = True
+
+
+class MenuItemImportResult(BaseModel):
+    imported: int
+    errors: list[dict] = []

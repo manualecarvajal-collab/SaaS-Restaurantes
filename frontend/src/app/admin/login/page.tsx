@@ -4,11 +4,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { ChefHat, Eye, EyeOff, LogIn } from "lucide-react";
 import { useAuthStore } from "@/stores/auth";
-
-const MOCK_CREDENTIALS = {
-  email: "admin@le-bistrot.com",
-  password: "admin123",
-};
+import { api } from "@/lib/api";
 
 export default function LoginPage() {
   const router = useRouter();
@@ -24,22 +20,32 @@ export default function LoginPage() {
     setError("");
     setLoading(true);
 
-    // Simulate async auth
-    await new Promise((r) => setTimeout(r, 600));
+    try {
+      const { access_token } = await api.post<{ access_token: string }>(
+        "/auth/login",
+        { email, password }
+      );
 
-    if (
-      email === MOCK_CREDENTIALS.email &&
-      password === MOCK_CREDENTIALS.password
-    ) {
-      login("mock-jwt-token", {
-        id: "admin-1",
-        email: "admin@le-bistrot.com",
-        fullName: "Admin Le Bistrot",
-        restaurantId: "rest-1",
-        restaurantName: "Le Bistrot",
+      localStorage.setItem("token", access_token);
+
+      const profile = await api.get<{
+        id: string;
+        email: string;
+        full_name: string;
+        role: string;
+        restaurant_id: string | null;
+      }>("/auth/me");
+
+      login(access_token, {
+        id: profile.id,
+        email: profile.email,
+        fullName: profile.full_name,
+        restaurantId: profile.restaurant_id ?? "",
+        restaurantName: "",
       });
+
       router.push("/admin");
-    } else {
+    } catch {
       setError("Correo o contraseña inválidos");
     }
     setLoading(false);

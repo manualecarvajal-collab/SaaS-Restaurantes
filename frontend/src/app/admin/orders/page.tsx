@@ -1,9 +1,15 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import { Search, ChevronLeft, ChevronRight, ArrowUpDown } from "lucide-react";
 import {
-  mockAdminOrders,
+  Search,
+  ChevronLeft,
+  ChevronRight,
+  ArrowUpDown,
+  Clock,
+} from "lucide-react";
+import {
+  getOrders,
   orderStatusLabels,
   orderStatusColors,
   type OrderStatusType,
@@ -12,13 +18,8 @@ import {
 
 const statusFilters: Array<{ label: string; value: OrderStatusType | "ALL" }> = [
   { label: "Todas", value: "ALL" },
-  { label: "Pendiente", value: "PENDING" },
-  { label: "Pago Enviado", value: "PAYMENT_SENT" },
-  { label: "Confirmada", value: "CONFIRMED" },
-  { label: "Preparando", value: "PREPARING" },
-  { label: "Lista", value: "READY" },
-  { label: "Entregada", value: "DELIVERED" },
-  { label: "Cancelada", value: "CANCELLED" },
+  { label: "Confirmadas", value: "CONFIRMED" },
+  { label: "Canceladas", value: "CANCELLED" },
 ];
 
 const PAGE_SIZE = 8;
@@ -32,11 +33,13 @@ export default function OrdersPage() {
   const [sortField, setSortField] = useState<keyof AdminOrder>("createdAt");
   const [sortDir, setSortDir] = useState<"asc" | "desc">("desc");
 
+  const orders = getOrders();
+
   const filtered = useMemo(() => {
     let result =
       activeFilter === "ALL"
-        ? [...mockAdminOrders]
-        : mockAdminOrders.filter((o) => o.status === activeFilter);
+        ? [...orders]
+        : orders.filter((o) => o.status === activeFilter);
 
     if (searchQuery.trim()) {
       const q = searchQuery.toLowerCase();
@@ -57,7 +60,7 @@ export default function OrdersPage() {
     });
 
     return result;
-  }, [activeFilter, searchQuery, sortField, sortDir]);
+  }, [activeFilter, searchQuery, sortField, sortDir, orders]);
 
   const totalPages = Math.ceil(filtered.length / PAGE_SIZE);
   const paginated = filtered.slice(page * PAGE_SIZE, (page + 1) * PAGE_SIZE);
@@ -88,7 +91,7 @@ export default function OrdersPage() {
             Total Órdenes
           </p>
           <p className="text-lg font-semibold text-foreground">
-            {mockAdminOrders.length}
+            {getOrders().length}
           </p>
         </div>
       </div>
@@ -133,8 +136,8 @@ export default function OrdersPage() {
         })}
       </div>
 
-      {/* Table */}
-      <div className="bg-card rounded-xl border border-border shadow-sm overflow-hidden">
+      {/* Desktop Table */}
+      <div className="hidden md:block bg-card rounded-xl border border-border shadow-sm overflow-hidden">
         <div className="overflow-x-auto">
           <table className="w-full text-left border-collapse">
             <thead>
@@ -224,7 +227,7 @@ export default function OrdersPage() {
           </table>
         </div>
 
-        {/* Pagination */}
+        {/* Desktop Pagination */}
         <div className="flex items-center justify-between px-4 py-3 border-t border-border bg-surface-container-low">
           <span className="text-sm text-muted-foreground">
             Mostrando {page * PAGE_SIZE + 1}–
@@ -245,6 +248,89 @@ export default function OrdersPage() {
               className="p-1.5 rounded-lg border border-border text-muted-foreground hover:bg-surface-container-high disabled:opacity-40 transition-colors"
             >
               <ChevronRight className="size-4" />
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* Mobile Cards */}
+      <div className="block md:hidden space-y-3">
+        {paginated.length === 0 ? (
+          <div className="bg-card rounded-xl border border-border shadow-sm p-8 text-center text-muted-foreground">
+            No se encontraron órdenes
+          </div>
+        ) : (
+          paginated.map((order) => (
+            <div
+              key={order.id}
+              className="bg-card rounded-xl border border-border shadow-sm p-4 space-y-3"
+            >
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-2">
+                  <span className="font-heading font-bold text-foreground">
+                    {order.orderNumber}
+                  </span>
+                  <span className="text-sm text-muted-foreground">
+                    Mesa {order.tableNumber}
+                  </span>
+                </div>
+                <span
+                  className={`inline-flex px-2 py-0.5 rounded-full text-xs font-medium ${
+                    orderStatusColors[order.status]
+                  }`}
+                >
+                  {orderStatusLabels[order.status]}
+                </span>
+              </div>
+
+              <div className="flex items-center justify-between">
+                <div>
+                  <p className="text-sm font-medium text-foreground">{order.dinerName}</p>
+                  <p className="text-xs text-muted-foreground">{order.dinerPhone}</p>
+                </div>
+                <span className="font-heading text-lg font-bold text-foreground">
+                  ${order.total.toFixed(2)}
+                </span>
+              </div>
+
+              <div className="flex items-center justify-between text-xs text-muted-foreground">
+                <span className="font-mono bg-muted px-1.5 py-0.5 rounded">
+                  {order.bankReference}
+                </span>
+                <div className="flex items-center gap-1">
+                  <Clock className="size-3" />
+                  <span>{order.elapsed}</span>
+                </div>
+              </div>
+
+              <div className="flex items-center justify-between text-xs text-muted-foreground border-t border-border pt-2">
+                <span>{order.itemsCount} items</span>
+                <span>{order.createdAt}</span>
+              </div>
+            </div>
+          ))
+        )}
+
+        {/* Mobile Pagination */}
+        <div className="flex items-center justify-between px-2 py-3">
+          <span className="text-xs text-muted-foreground">
+            {page * PAGE_SIZE + 1}–
+            {Math.min((page + 1) * PAGE_SIZE, filtered.length)} de {filtered.length}
+          </span>
+          <div className="flex gap-2">
+            <button
+              onClick={() => setPage(Math.max(0, page - 1))}
+              disabled={page === 0}
+              className="px-3 py-1.5 rounded-lg border border-border text-sm text-muted-foreground hover:bg-surface-container-high disabled:opacity-40 transition-colors"
+            >
+              Anterior
+            </button>
+            <button
+              onClick={() => setPage(Math.min(totalPages - 1, page + 1))}
+              disabled={page >= totalPages - 1}
+              className="px-3 py-1.5 rounded-lg border border-border text-sm text-muted-foreground hover:bg-surface-container-high disabled:opacity-40 transition-colors"
+            >
+              Siguiente
             </button>
           </div>
         </div>

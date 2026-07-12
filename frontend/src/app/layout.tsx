@@ -30,7 +30,7 @@ export default function RootLayout({
       lang="es"
       className={`${karla.variable} ${nunito.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col px-4">
+      <body className="min-h-full flex flex-col">
         <Providers>{children}</Providers>
       </body>
     </html>

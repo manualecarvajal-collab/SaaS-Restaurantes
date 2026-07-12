@@ -1,10 +1,8 @@
 import uuid
 
-from sqlalchemy import select, update as sa_update
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from core.security import create_access_token, get_password_hash, verify_password
-from models.profile import Profile
+from core.supabase import sign_in_with_password, create_auth_user, get_user_by_token
 from repositories.profile import ProfileRepository
 from schemas.auth import LoginRequest, SignupRequest, Token
 from schemas.profile import ProfileCreate, ProfileResponse
@@ -16,32 +14,39 @@ class AuthService:
         self.profile_repo = ProfileRepository(db)
 
     async def login(self, request: LoginRequest) -> Token | None:
-        stmt = select(Profile).where(Profile.email == request.email)
-        result = await self.db.execute(stmt)
-        instance = result.scalar_one_or_none()
-
-        if instance is None or not verify_password(request.password, instance.hashed_password):
+        # Authenticate via Supabase Auth
+        session = await sign_in_with_password(request.email, request.password)
+        if session is None or session.get("access_token") is None:
             return None
 
-        access_token = create_access_token(subject=str(instance.id))
-        return Token(access_token=access_token)
+        return Token(access_token=session["access_token"])
 
     async def signup(self, request: SignupRequest) -> ProfileResponse:
-        hashed = get_password_hash(request.password)
+        # 1. Create user in Supabase Auth
+        auth_user = await create_auth_user(
+            email=request.email,
+            password=request.password,
+            email_confirm=True,
+        )
+        if auth_user is None:
+            raise ValueError("Failed to create auth user")
+
+        # 2. Create profile in our database with the Supabase user ID
         rid = uuid.UUID(request.restaurant_id) if request.restaurant_id else None
         profile_data = ProfileCreate(
-            id=uuid.uuid4(),
+            id=uuid.UUID(auth_user["id"]),
             email=request.email,
             full_name=request.full_name,
             role="admin",
             restaurant_id=rid,
         )
         profile = await self.profile_repo.create(profile_data)
-        stmt = (
-            sa_update(Profile)
-            .where(Profile.id == profile.id)
-            .values(hashed_password=hashed)
-        )
-        await self.db.execute(stmt)
-        await self.db.flush()
+        return profile
+
+    async def get_profile_by_token(self, token: str) -> ProfileResponse | None:
+        """Get the user's profile from a Supabase JWT token."""
+        user_data = await get_user_by_token(token)
+        if user_data is None:
+            return None
+        profile = await self.profile_repo.get_by_id(uuid.UUID(user_data["id"]))
         return profile

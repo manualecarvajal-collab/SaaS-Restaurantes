@@ -1,14 +1,13 @@
 import uuid
 
 from fastapi import APIRouter, Depends, HTTPException, status
-from sqlalchemy import update as sa_update
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from api.deps import get_current_superadmin
 from core.database import get_db
-from core.security import get_password_hash
-from models.profile import Profile
+from core.supabase import create_auth_user
 from schemas.profile import AdminCreate, ProfileResponse, ProfileUpdate
+from schemas.profile import ProfileCreate
 from services.profile import ProfileService
 
 router = APIRouter()
@@ -39,21 +38,28 @@ async def create_admin(
     db: AsyncSession = Depends(get_db),
     _: ProfileResponse = Depends(get_current_superadmin),
 ):
-    hashed = get_password_hash(data.password)
-    admin_id = uuid.uuid4()
-    admin = Profile(
-        id=admin_id,
+    # 1. Create user in Supabase Auth
+    auth_user = await create_auth_user(
+        email=data.email,
+        password=data.password,
+        email_confirm=True,
+    )
+    if auth_user is None:
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail="Failed to create auth user",
+        )
+
+    # 2. Create profile in our database
+    profile_data = ProfileCreate(
+        id=uuid.UUID(auth_user["id"]),
         email=data.email,
         full_name=data.full_name,
-        hashed_password=hashed,
         role="admin",
         restaurant_id=data.restaurant_id,
-        is_active=True,
     )
-    db.add(admin)
-    await db.flush()
     service = ProfileService(db)
-    return await service.get_by_id(admin_id)
+    return await service.create(profile_data)
 
 
 @router.patch("/{profile_id}", response_model=ProfileResponse)
@@ -80,8 +86,12 @@ async def reset_admin_password(
     password = body.get("password")
     if not password or len(password) < 6:
         raise HTTPException(status_code=400, detail="Password must be at least 6 characters")
-    hashed = get_password_hash(password)
-    stmt = sa_update(Profile).where(Profile.id == profile_id).values(hashed_password=hashed)
-    await db.execute(stmt)
-    await db.flush()
+
+    # Use Supabase Auth admin API to update password
+    from core.supabase import get_supabase_admin
+    client = get_supabase_admin()
+    client.auth.admin.update_user_by_id(
+        str(profile_id),
+        {"password": password},
+    )
     return {"message": "Password reset successfully"}
