@@ -26,6 +26,8 @@ class Settings(BaseSettings):
     BACKEND_CORS_ORIGINS: list[str] = [
         "http://localhost:3000",
         "http://localhost:8000",
+        "https://pagamesa.vercel.app",
+        "https://pagamesa-api.vercel.app",
     ]
 
     COMMISSION_AMOUNT: float = 0.10
