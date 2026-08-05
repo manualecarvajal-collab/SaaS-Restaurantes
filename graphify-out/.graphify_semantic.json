@@ -1,0 +1,608 @@
+{
+  "nodes": [
+    {
+      "id": "_opencode_instructions_doc",
+      "label": "Project Context Instructions (SaaS Restaurants)",
+      "file_type": "document",
+      "rationale": "Operational guide listing the mandatory stack, the pre-built knowledge graph workflow, and authoritative documentation to read before architectural changes.",
+      "source_file": "/home/manuel/Documentos/pagamesa/.opencode/instructions.md",
+      "source_location": "@ALL",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "_opencode_instructions_graphify",
+      "label": "Graphify Knowledge Graph Workflow",
+      "file_type": "rationale",
+      "rationale": "Project maintains a pre-constructed knowledge graph in graphify-out/graph.json and auto-updates it after every commit via post-commit hook; queries for architecture/impact questions.",
+      "source_file": "/home/manuel/Documentos/pagamesa/.opencode/instructions.md",
+      "source_location": "@graphify-section",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "readme_doc",
+      "label": "README - SaaS-Restaurantes Overview",
+      "file_type": "document",
+      "source_file": "/home/manuel/Documentos/pagamesa/README.md",
+      "source_location": "@ALL",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "specs_specs_doc",
+      "label": "Technical Specifications (Single Source of Truth)",
+      "file_type": "document",
+      "rationale": "Authoritative engineering standards for financial resilience, multi-tenant security, and edge performance; governs AI orchestrators and developers.",
+      "source_file": "/home/manuel/Documentos/pagamesa/specs/specs.md",
+      "source_location": "@ALL",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "specs_specs_pago_movil",
+      "label": "Pago Móvil (Venezuelan P2P Payments)",
+      "file_type": "concept",
+      "rationale": "Customer pays the restaurant's bank account; restaurant receives full amount; superadmin collects commissions manually/officially. Local rail decouples from international gateway trap.",
+      "source_file": "/home/manuel/Documentos/pagamesa/specs/specs.md",
+      "source_location": "§7",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "specs_specs_hitl",
+      "label": "Human-in-the-Loop (HITL) Payment Validation",
+      "file_type": "rationale",
+      "rationale": "Technology optimizes flow but human control ensures final capital validation; adaptive to local payment rails and acts as the financial resilience axis.",
+      "source_file": "/home/manuel/Documentos/pagamesa/specs/specs.md",
+      "source_location": "§1, §7",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "specs_specs_financial_sovereignty",
+      "label": "Financial Sovereignty / Gateway Decoupling",
+      "file_type": "rationale",
+      "rationale": "Decoupling from global payment processors avoids predatory fees and settlement delays; local P2P Mobile Payments deliver immediate cash availability and reduced transaction costs.",
+      "source_file": "/home/manuel/Documentos/pagamesa/specs/specs.md",
+      "source_location": "§1",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "specs_specs_multi_tenant_saas",
+      "label": "Native Multi-tenant SaaS",
+      "file_type": "concept",
+      "source_file": "/home/manuel/Documentos/pagamesa/specs/specs.md",
+      "source_location": "§1",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "specs_specs_qr_ordering",
+      "label": "QR Ordering with Table Identifiers",
+      "file_type": "concept",
+      "rative": "Dynamic QR codes with integrated table identifiers eliminate friction between diner and service, reducing operational latency from menu discovery to payment confirmation.",
+      "source_file": "/home/manuel/Documentos/pagamesa/specs/specs.md",
+      "source_location": "§1, §4",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "specs_specs_custom_jwt_auth",
+      "label": "Legacy Custom JWT Auth (removed)",
+      "file_type": "concept",
+      "rationale": "python-jose + passlib custom JWT implementation removed; hashed_password field deprecated; Supabase Auth adopted as SSOT.",
+      "source_file": "/home/manuel/Documentos/pagamesa/specs/specs.md",
+      "source_location": "§6, §11",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "specs_specs_supabase_auth",
+      "label": "Supabase Auth (Source of Truth)",
+      "file_type": "concept",
+      "rationale": "Supabase Auth handles token issuance, hashing and validation; get_supabase()/get_supabase_admin() client factories, create_auth_user(), get_user_by_token().",
+      "source_file": "/home/manuel/Documentos/pagamesa/specs/specs.md",
+      "source_location": "§6",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "specs_specs_supabase_realtime",
+      "label": "Supabase Realtime (postgres_changes)",
+      "file_type": "concept",
+      "rationale": "postgres_changes channel notifies Admin Dashboard of new orders and PAYMENT_SENT, and the diner page of order status changes.",
+      "source_file": "/home/manuel/Documentos/pagamesa/specs/specs.md",
+      "source_location": "§9",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "specs_specs_rls",
+      "label": "Row-Level Security (RLS) Isolation",
+      "file_type": "concept",
+      "rationale": "Data isolation must be absolute; security delegated to the database engine, not the application layer. Warning: UPDATE silently affects 0 rows without explicit SELECT policy; helpers get_user_restaurant_id() and is_superadmin().",
+      "source_file": "/home/manuel/Documentos/pagamesa/specs/specs.md",
+      "source_location": "§3",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "specs_specs_repository_pattern",
+      "label": "Async Repository Pattern",
+      "file_type": "rationale",
+      "rationale": "ORM objects prohibited in the service layer to avoid 'Detached Instance' errors; repositories map results to Pydantic models before returning. Business logic consumes flat validated schemas.",
+      "source_file": "/home/manuel/Documentos/pagamesa/specs/specs.md",
+      "source_location": "§3",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "specs_specs_schema",
+      "label": "Database Schema (10 Tables)",
+      "file_type": "concept",
+      "rationale": "restaurants (tenant) + profiles, tables, menu_categories/menu_items, orders/order_items/order_status_history/payments, commissions ($0.10/order).",
+      "source_file": "/home/manuel/Documentos/pagamesa/specs/specs.md",
+      "source_location": "§3",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "specs_specs_order_state_machine",
+      "label": "Order Status State Machine",
+      "file_type": "concept",
+      "rationale": "PENDING → PAYMENT_SENT → CONFIRMED → PREPARING → READY → DELIVERED, with CANCELLED reachable from any state; payment status PENDING → VERIFIED / REJECTED.",
+      "source_file": "/home/manuel/Documentos/pagamesa/specs/specs.md",
+      "source_location": "§5",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "specs_specs_commission_system",
+      "label": "Commission System ($0.10 per Confirmed Order)",
+      "file_type": "concept",
+      "rationale": "Commission shown as 'Mantenimiento de la App' in the customer receipt; restaurant collects it from customer and superadmin collects manually; commission_count is not auto-updated yet.",
+      "source_file": "/home/manuel/Documentos/pagamesa/specs/specs.md",
+      "source_location": "§8",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "specs_specs_commission_service",
+      "label": "CommissionService (backend)",
+      "file_type": "code",
+      "rationale": "record_commission(order_id, restaurant_id) creates commission row and increments restaurant.commission_count at CONFIRMED transition.",
+      "source_file": "/home/manuel/Documentos/pagamesa/specs/specs.md",
+      "source_location": "§8",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "specs_specs_anti_fraud",
+      "label": "P2P Fraud Prevention (Unique Bank Reference)",
+      "file_type": "rationale",
+      "rationale": "Composite unique index (restaurant_id, bank_reference) blocks bank-reference reuse; audit trail via order_status_history.",
+      "source_file": "/home/manuel/Documentos/pagamesa/specs/specs.md",
+      "source_location": "§3, §7",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "specs_specs_frontend_mock",
+      "label": "Mock-based Frontend (current state)",
+      "file_type": "concept",
+      "rationale": "100% of menu and admin UI runs on mock data; src/lib/supabase.ts and src/lib/api.ts exist but are not consumed by components; phased migration to real Supabase queries required.",
+      "source_file": "/home/manuel/Documentos/pagamesa/specs/specs.md",
+      "source_location": "§10",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "specs_specs_roles_authz",
+      "label": "Authorization Matrix (SuperAdmin / Admin / Diner)",
+      "file_type": "concept",
+      "rationale": "SuperAdmin governs tenants and collects commissions; Admin performs menu/table CRUD and HITL payment verification; diner is registration-free via QR table_id.",
+      "source_file": "/home/manuel/Documentos/pagamesa/specs/specs.md",
+      "source_location": "§4, §6",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "specs_specs_migrations",
+      "label": "SQL Migration Files",
+      "file_type": "concept",
+      "rationale": "Numbered migrations 001_create_tables, 002_rls_policies, 003_seed_data are canonical; 000_full_schema.sql and full_schema.sql are duplicates to be removed.",
+      "source_file": "/home/manuel/Documentos/pagamesa/specs/specs.md",
+      "source_location": "§3, §12",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "_opencode_instructions_doc",
+      "target": "specs_specs_doc",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/manuel/Documentos/pagamesa/.opencode/instructions.md",
+      "source_location": "@autoritative-docs",
+      "weight": 1.0
+    },
+    {
+      "source": "_opencode_instructions_doc",
+      "target": "readme_doc",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/manuel/Documentos/pagamesa/.opencode/instructions.md",
+      "source_location": "@autoritative-docs",
+      "weight": 1.0
+    },
+    {
+      "source": "_opencode_instructions_graphify",
+      "target": "specs_specs_doc",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "/home/manuel/Documentos/pagamesa/.opencode/instructions.md",
+      "source_location": "@graphify-section",
+      "weight": 1.0
+    },
+    {
+      "source": "specs_specs_doc",
+      "target": "readme_doc",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/manuel/Documentos/pagamesa/specs/specs.md",
+      "source_location": "Appendix C",
+      "weight": 1.0
+    },
+    {
+      "source": "specs_specs_financial_sovereignty",
+      "target": "specs_specs_pago_movil",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/manuel/Documentos/pagamesa/specs/specs.md",
+      "source_location": "§1",
+      "weight": 1.0
+    },
+    {
+      "source": "specs_specs_financial_sovereignty",
+      "target": "specs_specs_rls",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/manuel/Documentos/pagamesa/specs/specs.md",
+      "source_location": "§1",
+      "weight": 1.0
+    },
+    {
+      "source": "specs_specs_hitl",
+      "target": "specs_specs_pago_movil",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/manuel/Documentos/pagamesa/specs/specs.md",
+      "source_location": "§7",
+      "weight": 1.0
+    },
+    {
+      "source": "specs_specs_hitl",
+      "target": "specs_specs_financial_sovereignty",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/manuel/Documentos/pagamesa/specs/specs.md",
+      "source_location": "§1",
+      "weight": 1.0
+    },
+    {
+      "source": "specs_specs_pago_movil",
+      "target": "specs_specs_schema",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/manuel/Documentos/pagamesa/specs/specs.md",
+      "source_location": "§7",
+      "weight": 1.0
+    },
+    {
+      "source": "specs_specs_pago_movil",
+      "target": "specs_specs_order_state_machine",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/manuel/Documentos/pagamesa/specs/specs.md",
+      "source_location": "§5",
+      "weight": 1.0
+    },
+    {
+      "source": "specs_specs_anti_fraud",
+      "target": "specs_specs_pago_movil",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/manuel/Documentos/pagamesa/specs/specs.md",
+      "source_location": "§7",
+      "weight": 1.0
+    },
+    {
+      "source": "specs_specs_anti_fraud",
+      "target": "specs_specs_schema",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/manuel/Documentos/pagamesa/specs/specs.md",
+      "source_location": "§7",
+      "weight": 1.0
+    },
+    {
+      "source": "specs_specs_commission_system",
+      "target": "specs_specs_order_state_machine",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/manuel/Documentos/pagamesa/specs/specs.md",
+      "source_location": "§8",
+      "weight": 1.0
+    },
+    {
+      "source": "specs_specs_commission_system",
+      "target": "specs_specs_schema",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/manuel/Documentos/pagamesa/specs/specs.md",
+      "source_location": "§8",
+      "weight": 1.0
+    },
+    {
+      "source": "specs_specs_commission_service",
+      "target": "specs_specs_commission_system",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/manuel/Documentos/pagamesa/specs/specs.md",
+      "source_location": "§8",
+      "weight": 1.0
+    },
+    {
+      "source": "specs_specs_order_state_machine",
+      "target": "specs_specs_schema",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/manuel/Documentos/pagamesa/specs/specs.md",
+      "source_location": "§3, §5",
+      "weight": 1.0
+    },
+    {
+      "source": "specs_specs_order_state_machine",
+      "target": "specs_specs_supabase_realtime",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/manuel/Documentos/pagamesa/specs/specs.md",
+      "source_location": "§9",
+      "weight": 1.0
+    },
+    {
+      "source": "specs_specs_supabase_auth",
+      "target": "specs_specs_custom_jwt_auth",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/manuel/Documentos/pagamesa/specs/specs.md",
+      "source_location": "§6",
+      "weight": 1.0
+    },
+    {
+      "source": "specs_specs_supabase_auth",
+      "target": "specs_specs_frontend_mock",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/manuel/Documentos/pagamesa/specs/specs.md",
+      "source_location": "§6, §10",
+      "weight": 1.0
+    },
+    {
+      "source": "specs_specs_supabase_realtime",
+      "target": "specs_specs_frontend_mock",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/manuel/Documentos/pagamesa/specs/specs.md",
+      "source_location": "§9, §10",
+      "weight": 1.0
+    },
+    {
+      "source": "specs_specs_frontend_mock",
+      "target": "specs_specs_custom_jwt_auth",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "/home/manuel/Documentos/pagamesa/specs/specs.md",
+      "source_location": "§11",
+      "weight": 1.0
+    },
+    {
+      "source": "specs_specs_rls",
+      "target": "specs_specs_multi_tenant_saas",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/manuel/Documentos/pagamesa/specs/specs.md",
+      "source_location": "§3",
+      "weight": 1.0
+    },
+    {
+      "source": "specs_specs_rls",
+      "target": "specs_specs_schema",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/manuel/Documentos/pagamesa/specs/specs.md",
+      "source_location": "§3",
+      "weight": 1.0
+    },
+    {
+      "source": "specs_specs_multi_tenant_saas",
+      "target": "specs_specs_schema",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/manuel/Documentos/pagamesa/specs/specs.md",
+      "source_location": "§3",
+      "weight": 1.0
+    },
+    {
+      "source": "specs_specs_schema",
+      "target": "specs_specs_migrations",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/manuel/Documentos/pagamesa/specs/specs.md",
+      "source_location": "§3",
+      "weight": 1.0
+    },
+    {
+      "source": "specs_specs_roles_authz",
+      "target": "specs_specs_hitl",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/manuel/Documentos/pagamesa/specs/specs.md",
+      "source_location": "§4",
+      "weight": 1.0
+    },
+    {
+      "source": "specs_specs_repository_pattern",
+      "target": "specs_specs_schema",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "/home/manuel/Documentos/pagamesa/specs/specs.md",
+      "source_location": "§3",
+      "weight": 1.0
+    },
+    {
+      "source": "specs_specs_qr_ordering",
+      "target": "specs_specs_order_state_machine",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/manuel/Documentos/pagamesa/specs/specs.md",
+      "source_location": "§5",
+      "weight": 1.0
+    },
+    {
+      "source": "specs_specs_qr_ordering",
+      "target": "specs_specs_schema",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "/home/manuel/Documentos/pagamesa/specs/specs.md",
+      "source_location": "§3",
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "order_to_payment_flow",
+      "label": "Order-to-Commission Operational Flow",
+      "nodes": [
+        "specs_specs_qr_ordering",
+        "specs_specs_order_state_machine",
+        "specs_specs_pago_movil",
+        "specs_specs_hitl",
+        "specs_specs_commission_system",
+        "specs_specs_supabase_realtime"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/manuel/Documentos/pagamesa/specs/specs.md",
+      "source_location": "§5"
+    },
+    {
+      "id": "multi_tenant_isolation",
+      "label": "Multi-tenant Data Isolation via RLS",
+      "nodes": [
+        "specs_specs_multi_tenant_saas",
+        "specs_specs_rls",
+        "specs_specs_schema"
+      ],
+      "relation": "implement",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/manuel/Documentos/pagamesa/specs/specs.md",
+      "source_location": "§3"
+    },
+    {
+      "id": "supabase_stack_adoption",
+      "label": "Supabase Platform Adoption (Auth + Realtime + Migration)",
+      "nodes": [
+        "specs_specs_supabase_auth",
+        "specs_specs_supabase_realtime",
+        "specs_specs_custom_jwt_auth",
+        "specs_specs_frontend_mock"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "/home/manuel/Documentos/pagamesa/specs/specs.md",
+      "source_location": "§6"
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

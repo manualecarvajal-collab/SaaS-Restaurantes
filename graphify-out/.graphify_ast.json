@@ -1,0 +1,5506 @@
+{
+  "nodes": [
+    {
+      "id": "opencode_package",
+      "label": "package.json",
+      "file_type": "code",
+      "source_file": ".opencode/package.json",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "opencode_package_dependencies",
+      "label": "dependencies",
+      "file_type": "code",
+      "source_file": ".opencode/package.json",
+      "source_location": "L2",
+      "_origin": "ast"
+    },
+    {
+      "id": "opencode_package_dependencies_opencode_ai_plugin",
+      "label": "@opencode-ai/plugin",
+      "file_type": "code",
+      "source_file": ".opencode/package.json",
+      "source_location": "L3",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_auth_py",
+      "label": "auth.py",
+      "file_type": "code",
+      "source_file": "backend/api/v1/endpoints/auth.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_auth_login",
+      "label": "login()",
+      "file_type": "code",
+      "source_file": "backend/api/v1/endpoints/auth.py",
+      "source_location": "L14",
+      "_origin": "ast"
+    },
+    {
+      "id": "loginrequest",
+      "label": "LoginRequest",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_auth_py_asyncsession",
+      "label": "AsyncSession",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_auth_get_me",
+      "label": "get_me()",
+      "file_type": "code",
+      "source_file": "backend/api/v1/endpoints/auth.py",
+      "source_location": "L26",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_auth_py_profileresponse",
+      "label": "ProfileResponse",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_auth_signup",
+      "label": "signup()",
+      "file_type": "code",
+      "source_file": "backend/api/v1/endpoints/auth.py",
+      "source_location": "L31",
+      "_origin": "ast"
+    },
+    {
+      "id": "signuprequest",
+      "label": "SignupRequest",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_py",
+      "label": "menu.py",
+      "file_type": "code",
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_list_categories",
+      "label": "list_categories()",
+      "file_type": "code",
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L19",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_py_uuid",
+      "label": "UUID",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_py_asyncsession",
+      "label": "AsyncSession",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_list_active_categories",
+      "label": "list_active_categories()",
+      "file_type": "code",
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L28",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_get_category",
+      "label": "get_category()",
+      "file_type": "code",
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L37",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_create_category",
+      "label": "create_category()",
+      "file_type": "code",
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L49",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_py_menucategorycreate",
+      "label": "MenuCategoryCreate",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_py_profileresponse",
+      "label": "ProfileResponse",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_update_category",
+      "label": "update_category()",
+      "file_type": "code",
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L59",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_py_menucategoryupdate",
+      "label": "MenuCategoryUpdate",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_delete_category",
+      "label": "delete_category()",
+      "file_type": "code",
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L73",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_list_items",
+      "label": "list_items()",
+      "file_type": "code",
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L87",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_list_available_items",
+      "label": "list_available_items()",
+      "file_type": "code",
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L96",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_list_items_by_category",
+      "label": "list_items_by_category()",
+      "file_type": "code",
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L105",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_get_item",
+      "label": "get_item()",
+      "file_type": "code",
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L114",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_create_item",
+      "label": "create_item()",
+      "file_type": "code",
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L126",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_update_item",
+      "label": "update_item()",
+      "file_type": "code",
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L136",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_delete_item",
+      "label": "delete_item()",
+      "file_type": "code",
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L150",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_import_items",
+      "label": "import_items()",
+      "file_type": "code",
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L162",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_py_uploadfile",
+      "label": "UploadFile",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_core_supabase_py",
+      "label": "supabase.py",
+      "file_type": "code",
+      "source_file": "backend/core/supabase.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_core_supabase_get_supabase",
+      "label": "get_supabase()",
+      "file_type": "code",
+      "source_file": "backend/core/supabase.py",
+      "source_location": "L28",
+      "_origin": "ast"
+    },
+    {
+      "id": "client",
+      "label": "Client",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_core_supabase_get_supabase_admin",
+      "label": "get_supabase_admin()",
+      "file_type": "code",
+      "source_file": "backend/core/supabase.py",
+      "source_location": "L36",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_core_supabase_sign_in_with_password",
+      "label": "sign_in_with_password()",
+      "file_type": "code",
+      "source_file": "backend/core/supabase.py",
+      "source_location": "L46",
+      "_origin": "ast"
+    },
+    {
+      "id": "any",
+      "label": "Any",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_core_supabase_get_user_by_email",
+      "label": "get_user_by_email()",
+      "file_type": "code",
+      "source_file": "backend/core/supabase.py",
+      "source_location": "L68",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_core_supabase_create_auth_user",
+      "label": "create_auth_user()",
+      "file_type": "code",
+      "source_file": "backend/core/supabase.py",
+      "source_location": "L86",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_core_supabase_get_user_by_token",
+      "label": "get_user_by_token()",
+      "file_type": "code",
+      "source_file": "backend/core/supabase.py",
+      "source_location": "L109",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_core_supabase_sign_out",
+      "label": "sign_out()",
+      "file_type": "code",
+      "source_file": "backend/core/supabase.py",
+      "source_location": "L128",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_core_supabase_rationale_1",
+      "label": "Supabase client utilities.  Provides two clients: - supabase: anon-key client fo",
+      "file_type": "rationale",
+      "source_file": "backend/core/supabase.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_core_supabase_rationale_29",
+      "label": "Get the user-facing Supabase client (anon key).",
+      "file_type": "rationale",
+      "source_file": "backend/core/supabase.py",
+      "source_location": "L29",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_core_supabase_rationale_37",
+      "label": "Get the admin Supabase client (service_role key).",
+      "file_type": "rationale",
+      "source_file": "backend/core/supabase.py",
+      "source_location": "L37",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_core_supabase_rationale_47",
+      "label": "Sign in a user with email and password via Supabase Auth.      Returns the sessi",
+      "file_type": "rationale",
+      "source_file": "backend/core/supabase.py",
+      "source_location": "L47",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_core_supabase_rationale_69",
+      "label": "Look up a user by email via Supabase Auth admin API.      Returns the user dict",
+      "file_type": "rationale",
+      "source_file": "backend/core/supabase.py",
+      "source_location": "L69",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_core_supabase_rationale_87",
+      "label": "Create a new user in Supabase Auth (admin operation).      Returns the user dict",
+      "file_type": "rationale",
+      "source_file": "backend/core/supabase.py",
+      "source_location": "L87",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_core_supabase_rationale_110",
+      "label": "Validate a JWT token and return the user info.      Returns the user dict if val",
+      "file_type": "rationale",
+      "source_file": "backend/core/supabase.py",
+      "source_location": "L110",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_core_supabase_rationale_129",
+      "label": "Sign out a user by revoking their session.",
+      "file_type": "rationale",
+      "source_file": "backend/core/supabase.py",
+      "source_location": "L129",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_models_menu_item_py",
+      "label": "menu_item.py",
+      "file_type": "code",
+      "source_file": "backend/models/menu_item.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_models_menu_item_menuitem",
+      "label": "MenuItem",
+      "file_type": "code",
+      "source_file": "backend/models/menu_item.py",
+      "source_location": "L11",
+      "_origin": "ast"
+    },
+    {
+      "id": "pkmixin",
+      "label": "PKMixin",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "timestampmixin",
+      "label": "TimestampMixin",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "base",
+      "label": "Base",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "pkg_backend",
+      "label": "backend",
+      "file_type": "code",
+      "type": "package",
+      "ecosystem": "python",
+      "source_file": "backend/pyproject.toml",
+      "source_location": "L1",
+      "version": "0.1.0",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_schemas_menu_item_py",
+      "label": "menu_item.py",
+      "file_type": "code",
+      "source_file": "backend/schemas/menu_item.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_schemas_menu_item_menuitembase",
+      "label": "MenuItemBase",
+      "file_type": "code",
+      "source_file": "backend/schemas/menu_item.py",
+      "source_location": "L7",
+      "_origin": "ast"
+    },
+    {
+      "id": "basemodel",
+      "label": "BaseModel",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_schemas_menu_item_menuitemcreate",
+      "label": "MenuItemCreate",
+      "file_type": "code",
+      "source_file": "backend/schemas/menu_item.py",
+      "source_location": "L20",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_schemas_menu_item_menuitemupdate",
+      "label": "MenuItemUpdate",
+      "file_type": "code",
+      "source_file": "backend/schemas/menu_item.py",
+      "source_location": "L24",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_schemas_menu_item_menuitemresponse",
+      "label": "MenuItemResponse",
+      "file_type": "code",
+      "source_file": "backend/schemas/menu_item.py",
+      "source_location": "L36",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_schemas_menu_item_menuitemimportrow",
+      "label": "MenuItemImportRow",
+      "file_type": "code",
+      "source_file": "backend/schemas/menu_item.py",
+      "source_location": "L44",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_schemas_menu_item_menuitemimportresult",
+      "label": "MenuItemImportResult",
+      "file_type": "code",
+      "source_file": "backend/schemas/menu_item.py",
+      "source_location": "L54",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_scripts_seed_auth_users_py",
+      "label": "seed_auth_users.py",
+      "file_type": "code",
+      "source_file": "backend/scripts/seed_auth_users.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_scripts_seed_auth_users_print_header",
+      "label": "print_header()",
+      "file_type": "code",
+      "source_file": "backend/scripts/seed_auth_users.py",
+      "source_location": "L35",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_scripts_seed_auth_users_find_or_create_user",
+      "label": "find_or_create_user()",
+      "file_type": "code",
+      "source_file": "backend/scripts/seed_auth_users.py",
+      "source_location": "L41",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_scripts_seed_auth_users_create_profile_in_db",
+      "label": "create_profile_in_db()",
+      "file_type": "code",
+      "source_file": "backend/scripts/seed_auth_users.py",
+      "source_location": "L58",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_scripts_seed_auth_users_py_asyncsession",
+      "label": "AsyncSession",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_scripts_seed_auth_users_main",
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "backend/scripts/seed_auth_users.py",
+      "source_location": "L93",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_scripts_seed_auth_users_rationale_1",
+      "label": "Seed Auth Users Script.  Creates superadmin and admin users in Supabase Auth + t",
+      "file_type": "rationale",
+      "source_file": "backend/scripts/seed_auth_users.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_scripts_seed_auth_users_rationale_42",
+      "label": "Find existing user by email or create a new one in Supabase Auth.",
+      "file_type": "rationale",
+      "source_file": "backend/scripts/seed_auth_users.py",
+      "source_location": "L42",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_scripts_seed_auth_users_rationale_66",
+      "label": "Create a profile entry in the profiles table.",
+      "file_type": "rationale",
+      "source_file": "backend/scripts/seed_auth_users.py",
+      "source_location": "L66",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_py",
+      "label": "menu.py",
+      "file_type": "code",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice",
+      "label": "MenuService",
+      "file_type": "code",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L24",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice_init",
+      "label": ".__init__()",
+      "file_type": "code",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L25",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_py_asyncsession",
+      "label": "AsyncSession",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice_list_categories",
+      "label": ".list_categories()",
+      "file_type": "code",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L30",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_py_uuid",
+      "label": "UUID",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "menucategoryresponse",
+      "label": "MenuCategoryResponse",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice_list_active_categories",
+      "label": ".list_active_categories()",
+      "file_type": "code",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L33",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice_get_category",
+      "label": ".get_category()",
+      "file_type": "code",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L36",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice_create_category",
+      "label": ".create_category()",
+      "file_type": "code",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L39",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_py_menucategorycreate",
+      "label": "MenuCategoryCreate",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice_update_category",
+      "label": ".update_category()",
+      "file_type": "code",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L42",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_py_menucategoryupdate",
+      "label": "MenuCategoryUpdate",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice_delete_category",
+      "label": ".delete_category()",
+      "file_type": "code",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L45",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice_list_items",
+      "label": ".list_items()",
+      "file_type": "code",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L49",
+      "_origin": "ast"
+    },
+    {
+      "id": "menuitemresponse",
+      "label": "MenuItemResponse",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice_list_available_items",
+      "label": ".list_available_items()",
+      "file_type": "code",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L52",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice_list_items_by_category",
+      "label": ".list_items_by_category()",
+      "file_type": "code",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L55",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice_get_item",
+      "label": ".get_item()",
+      "file_type": "code",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L58",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice_create_item",
+      "label": ".create_item()",
+      "file_type": "code",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L61",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice_update_item",
+      "label": ".update_item()",
+      "file_type": "code",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L64",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice_delete_item",
+      "label": ".delete_item()",
+      "file_type": "code",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L67",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice_import_items",
+      "label": ".import_items()",
+      "file_type": "code",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L71",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_py_uploadfile",
+      "label": "UploadFile",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice_parse_csv",
+      "label": "._parse_csv()",
+      "file_type": "code",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L117",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice_parse_xlsx",
+      "label": "._parse_xlsx()",
+      "file_type": "code",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L124",
+      "_origin": "ast"
+    },
+    {
+      "id": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice_normalize_row",
+      "label": "._normalize_row()",
+      "file_type": "code",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L146",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_next_env_d",
+      "label": "next-env.d.ts",
+      "file_type": "code",
+      "source_file": "frontend/next-env.d.ts",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_next_env_d_rationale_5",
+      "label": "NOTE: This file should not be edited",
+      "file_type": "rationale",
+      "source_file": "frontend/next-env.d.ts",
+      "source_location": "L5",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_menu_payment_page",
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "frontend/src/app/(menu)/payment/page.tsx",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_menu_payment_page_copybutton",
+      "label": "CopyButton()",
+      "file_type": "code",
+      "source_file": "frontend/src/app/(menu)/payment/page.tsx",
+      "source_location": "L18",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_menu_payment_page_paymentcontent",
+      "label": "PaymentContent()",
+      "file_type": "code",
+      "source_file": "frontend/src/app/(menu)/payment/page.tsx",
+      "source_location": "L52",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_menu_payment_page_paymentpage",
+      "label": "PaymentPage()",
+      "file_type": "code",
+      "source_file": "frontend/src/app/(menu)/payment/page.tsx",
+      "source_location": "L229",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_admin_commission_page",
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "frontend/src/app/admin/commission/page.tsx",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_admin_commission_page_commissionpage",
+      "label": "CommissionPage()",
+      "file_type": "code",
+      "source_file": "frontend/src/app/admin/commission/page.tsx",
+      "source_location": "L11",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_admin_layout",
+      "label": "layout.tsx",
+      "file_type": "code",
+      "source_file": "frontend/src/app/admin/layout.tsx",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_admin_layout_navitems",
+      "label": "navItems",
+      "file_type": "code",
+      "source_file": "frontend/src/app/admin/layout.tsx",
+      "source_location": "L19",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_admin_layout_adminlayout",
+      "label": "AdminLayout()",
+      "file_type": "code",
+      "source_file": "frontend/src/app/admin/layout.tsx",
+      "source_location": "L27",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_admin_login_page",
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "frontend/src/app/admin/login/page.tsx",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_admin_login_page_loginpage",
+      "label": "LoginPage()",
+      "file_type": "code",
+      "source_file": "frontend/src/app/admin/login/page.tsx",
+      "source_location": "L9",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_admin_menu_page",
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "frontend/src/app/admin/menu/page.tsx",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_admin_menu_page_category",
+      "label": "Category",
+      "file_type": "code",
+      "source_file": "frontend/src/app/admin/menu/page.tsx",
+      "source_location": "L14",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_admin_menu_page_menuitemdata",
+      "label": "MenuItemData",
+      "file_type": "code",
+      "source_file": "frontend/src/app/admin/menu/page.tsx",
+      "source_location": "L19",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_admin_menu_page_adminmenupage",
+      "label": "AdminMenuPage()",
+      "file_type": "code",
+      "source_file": "frontend/src/app/admin/menu/page.tsx",
+      "source_location": "L30",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_admin_orders_page",
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "frontend/src/app/admin/orders/page.tsx",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_admin_orders_page_statusfilters",
+      "label": "statusFilters",
+      "file_type": "code",
+      "source_file": "frontend/src/app/admin/orders/page.tsx",
+      "source_location": "L19",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_admin_orders_page_orderspage",
+      "label": "OrdersPage()",
+      "file_type": "code",
+      "source_file": "frontend/src/app/admin/orders/page.tsx",
+      "source_location": "L27",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_admin_orders_page_th",
+      "label": "Th()",
+      "file_type": "code",
+      "source_file": "frontend/src/app/admin/orders/page.tsx",
+      "source_location": "L342",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_admin_page",
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "frontend/src/app/admin/page.tsx",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_admin_page_activityiconmap",
+      "label": "activityIconMap",
+      "file_type": "code",
+      "source_file": "frontend/src/app/admin/page.tsx",
+      "source_location": "L29",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_admin_page_admindashboard",
+      "label": "AdminDashboard()",
+      "file_type": "code",
+      "source_file": "frontend/src/app/admin/page.tsx",
+      "source_location": "L36",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_admin_page_pendingpaymentcard",
+      "label": "PendingPaymentCard()",
+      "file_type": "code",
+      "source_file": "frontend/src/app/admin/page.tsx",
+      "source_location": "L312",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_layout",
+      "label": "layout.tsx",
+      "file_type": "code",
+      "source_file": "frontend/src/app/layout.tsx",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_layout_karla",
+      "label": "karla",
+      "file_type": "code",
+      "source_file": "frontend/src/app/layout.tsx",
+      "source_location": "L6",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_layout_nunito",
+      "label": "nunito",
+      "file_type": "code",
+      "source_file": "frontend/src/app/layout.tsx",
+      "source_location": "L12",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_layout_metadata",
+      "label": "metadata",
+      "file_type": "code",
+      "source_file": "frontend/src/app/layout.tsx",
+      "source_location": "L18",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_layout_rootlayout",
+      "label": "RootLayout()",
+      "file_type": "code",
+      "source_file": "frontend/src/app/layout.tsx",
+      "source_location": "L23",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_components_admin_menu_import_modal",
+      "label": "menu-import-modal.tsx",
+      "file_type": "code",
+      "source_file": "frontend/src/components/admin/menu-import-modal.tsx",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_components_admin_menu_import_modal_importresult",
+      "label": "ImportResult",
+      "file_type": "code",
+      "source_file": "frontend/src/components/admin/menu-import-modal.tsx",
+      "source_location": "L9",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_components_admin_menu_import_modal_props",
+      "label": "Props",
+      "file_type": "code",
+      "source_file": "frontend/src/components/admin/menu-import-modal.tsx",
+      "source_location": "L14",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_components_admin_menu_import_modal_step",
+      "label": "Step",
+      "file_type": "code",
+      "source_file": "frontend/src/components/admin/menu-import-modal.tsx",
+      "source_location": "L21",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_components_admin_menu_import_modal_menuimportmodal",
+      "label": "MenuImportModal()",
+      "file_type": "code",
+      "source_file": "frontend/src/components/admin/menu-import-modal.tsx",
+      "source_location": "L27",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_components_admin_menu_item_form",
+      "label": "menu-item-form.tsx",
+      "file_type": "code",
+      "source_file": "frontend/src/components/admin/menu-item-form.tsx",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_components_admin_menu_item_form_category",
+      "label": "Category",
+      "file_type": "code",
+      "source_file": "frontend/src/components/admin/menu-item-form.tsx",
+      "source_location": "L13",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_components_admin_menu_item_form_menuitemformdata",
+      "label": "MenuItemFormData",
+      "file_type": "code",
+      "source_file": "frontend/src/components/admin/menu-item-form.tsx",
+      "source_location": "L18",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_components_admin_menu_item_form_menuitemresponse",
+      "label": "MenuItemResponse",
+      "file_type": "code",
+      "source_file": "frontend/src/components/admin/menu-item-form.tsx",
+      "source_location": "L28",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_components_admin_menu_item_form_props",
+      "label": "Props",
+      "file_type": "code",
+      "source_file": "frontend/src/components/admin/menu-item-form.tsx",
+      "source_location": "L39",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_components_admin_menu_item_form_menuitemform",
+      "label": "MenuItemForm()",
+      "file_type": "code",
+      "source_file": "frontend/src/components/admin/menu-item-form.tsx",
+      "source_location": "L47",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_lib_api",
+      "label": "api.ts",
+      "file_type": "code",
+      "source_file": "frontend/src/lib/api.ts",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_lib_api_apierror",
+      "label": "ApiError",
+      "file_type": "code",
+      "source_file": "frontend/src/lib/api.ts",
+      "source_location": "L3",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_lib_api_apierror_constructor",
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "frontend/src/lib/api.ts",
+      "source_location": "L5",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_lib_api_request",
+      "label": "request()",
+      "file_type": "code",
+      "source_file": "frontend/src/lib/api.ts",
+      "source_location": "L11",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_lib_api_uploadfile",
+      "label": "uploadFile()",
+      "file_type": "code",
+      "source_file": "frontend/src/lib/api.ts",
+      "source_location": "L41",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_lib_api_api",
+      "label": "api",
+      "file_type": "code",
+      "source_file": "frontend/src/lib/api.ts",
+      "source_location": "L78",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_lib_constants",
+      "label": "constants.ts",
+      "file_type": "code",
+      "source_file": "frontend/src/lib/constants.ts",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_lib_constants_order_statuses",
+      "label": "ORDER_STATUSES",
+      "file_type": "code",
+      "source_file": "frontend/src/lib/constants.ts",
+      "source_location": "L6",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_lib_constants_orderstatus",
+      "label": "OrderStatus",
+      "file_type": "code",
+      "source_file": "frontend/src/lib/constants.ts",
+      "source_location": "L8",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_lib_constants_payment_statuses",
+      "label": "PAYMENT_STATUSES",
+      "file_type": "code",
+      "source_file": "frontend/src/lib/constants.ts",
+      "source_location": "L10",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_lib_constants_paymentstatus",
+      "label": "PaymentStatus",
+      "file_type": "code",
+      "source_file": "frontend/src/lib/constants.ts",
+      "source_location": "L16",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_lib_mock_admin",
+      "label": "mock-admin.ts",
+      "file_type": "code",
+      "source_file": "frontend/src/lib/mock-admin.ts",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_lib_mock_admin_adminstats",
+      "label": "AdminStats",
+      "file_type": "code",
+      "source_file": "frontend/src/lib/mock-admin.ts",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_lib_mock_admin_pendingpayment",
+      "label": "PendingPayment",
+      "file_type": "code",
+      "source_file": "frontend/src/lib/mock-admin.ts",
+      "source_location": "L11",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_lib_mock_admin_orderstatus",
+      "label": "OrderStatus",
+      "file_type": "code",
+      "source_file": "frontend/src/lib/mock-admin.ts",
+      "source_location": "L24",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_lib_mock_admin_activity",
+      "label": "Activity",
+      "file_type": "code",
+      "source_file": "frontend/src/lib/mock-admin.ts",
+      "source_location": "L31",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_lib_mock_admin_mockadminstats",
+      "label": "mockAdminStats",
+      "file_type": "code",
+      "source_file": "frontend/src/lib/mock-admin.ts",
+      "source_location": "L38",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_lib_mock_admin_mockpendingpayments",
+      "label": "mockPendingPayments",
+      "file_type": "code",
+      "source_file": "frontend/src/lib/mock-admin.ts",
+      "source_location": "L48",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_lib_mock_admin_mockorderstatuses",
+      "label": "mockOrderStatuses",
+      "file_type": "code",
+      "source_file": "frontend/src/lib/mock-admin.ts",
+      "source_location": "L111",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_lib_mock_admin_adminorder",
+      "label": "AdminOrder",
+      "file_type": "code",
+      "source_file": "frontend/src/lib/mock-admin.ts",
+      "source_location": "L116",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_lib_mock_admin_orderstatustype",
+      "label": "OrderStatusType",
+      "file_type": "code",
+      "source_file": "frontend/src/lib/mock-admin.ts",
+      "source_location": "L131",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_lib_mock_admin_orderstatuslabels",
+      "label": "orderStatusLabels",
+      "file_type": "code",
+      "source_file": "frontend/src/lib/mock-admin.ts",
+      "source_location": "L133",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_lib_mock_admin_orderstatuscolors",
+      "label": "orderStatusColors",
+      "file_type": "code",
+      "source_file": "frontend/src/lib/mock-admin.ts",
+      "source_location": "L138",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_lib_mock_admin_adminorders",
+      "label": "_adminOrders",
+      "file_type": "code",
+      "source_file": "frontend/src/lib/mock-admin.ts",
+      "source_location": "L144",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_lib_mock_admin_pendinglist",
+      "label": "_pendingList",
+      "file_type": "code",
+      "source_file": "frontend/src/lib/mock-admin.ts",
+      "source_location": "L175",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_lib_mock_admin_getorders",
+      "label": "getOrders()",
+      "file_type": "code",
+      "source_file": "frontend/src/lib/mock-admin.ts",
+      "source_location": "L238",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_lib_mock_admin_addorder",
+      "label": "addOrder()",
+      "file_type": "code",
+      "source_file": "frontend/src/lib/mock-admin.ts",
+      "source_location": "L242",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_lib_mock_admin_getpendingpayments",
+      "label": "getPendingPayments()",
+      "file_type": "code",
+      "source_file": "frontend/src/lib/mock-admin.ts",
+      "source_location": "L246",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_lib_mock_admin_removependingpayment",
+      "label": "removePendingPayment()",
+      "file_type": "code",
+      "source_file": "frontend/src/lib/mock-admin.ts",
+      "source_location": "L250",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_lib_mock_admin_mockactivities",
+      "label": "mockActivities",
+      "file_type": "code",
+      "source_file": "frontend/src/lib/mock-admin.ts",
+      "source_location": "L254",
+      "_origin": "ast"
+    }
+  ],
+  "edges": [
+    {
+      "source": "opencode_package",
+      "target": "opencode_package_dependencies",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".opencode/package.json",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "opencode_package_dependencies",
+      "target": "opencode_package_dependencies_opencode_ai_plugin",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".opencode/package.json",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "opencode_package_dependencies_opencode_ai_plugin",
+      "target": "opencode_ai_plugin",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": ".opencode/package.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_auth_py",
+      "target": "fastapi",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/api/v1/endpoints/auth.py",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_auth_py",
+      "target": "sqlalchemy_ext_asyncio",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/api/v1/endpoints/auth.py",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_auth_py",
+      "target": "core_database",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/api/v1/endpoints/auth.py",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_auth_py",
+      "target": "api_deps",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/api/v1/endpoints/auth.py",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_auth_py",
+      "target": "schemas_auth",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/api/v1/endpoints/auth.py",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_auth_py",
+      "target": "schemas_profile",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/api/v1/endpoints/auth.py",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_auth_py",
+      "target": "services_auth",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/api/v1/endpoints/auth.py",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_auth_py",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_auth_login",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/api/v1/endpoints/auth.py",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_auth_login",
+      "target": "loginrequest",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/api/v1/endpoints/auth.py",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_auth_login",
+      "target": "asyncsession",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/api/v1/endpoints/auth.py",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_auth_py",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_auth_get_me",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/api/v1/endpoints/auth.py",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_auth_get_me",
+      "target": "profileresponse",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/api/v1/endpoints/auth.py",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_auth_py",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_auth_signup",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/api/v1/endpoints/auth.py",
+      "source_location": "L31",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_auth_signup",
+      "target": "signuprequest",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/api/v1/endpoints/auth.py",
+      "source_location": "L31",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_auth_signup",
+      "target": "asyncsession",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/api/v1/endpoints/auth.py",
+      "source_location": "L31",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_py",
+      "target": "uuid",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_py",
+      "target": "fastapi",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_py",
+      "target": "sqlalchemy_ext_asyncio",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_py",
+      "target": "api_deps",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_py",
+      "target": "core_database",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_py",
+      "target": "schemas_menu_category",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_py",
+      "target": "schemas_menu_item",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_py",
+      "target": "schemas_profile",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_py",
+      "target": "services_menu",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_py",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_list_categories",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_list_categories",
+      "target": "uuid",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_list_categories",
+      "target": "asyncsession",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_py",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_list_active_categories",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L28",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_list_active_categories",
+      "target": "uuid",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L28",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_list_active_categories",
+      "target": "asyncsession",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L28",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_py",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_get_category",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_get_category",
+      "target": "uuid",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_get_category",
+      "target": "asyncsession",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_py",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_create_category",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L49",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_create_category",
+      "target": "menucategorycreate",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L49",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_create_category",
+      "target": "asyncsession",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L49",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_create_category",
+      "target": "profileresponse",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L49",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_py",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_update_category",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L59",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_update_category",
+      "target": "uuid",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L59",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_update_category",
+      "target": "menucategoryupdate",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L59",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_update_category",
+      "target": "asyncsession",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L59",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_update_category",
+      "target": "profileresponse",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L59",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_py",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_delete_category",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L73",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_delete_category",
+      "target": "uuid",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L73",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_delete_category",
+      "target": "asyncsession",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L73",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_delete_category",
+      "target": "profileresponse",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L73",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_py",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_list_items",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L87",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_list_items",
+      "target": "uuid",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L87",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_list_items",
+      "target": "asyncsession",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L87",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_py",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_list_available_items",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L96",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_list_available_items",
+      "target": "uuid",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L96",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_list_available_items",
+      "target": "asyncsession",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L96",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_py",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_list_items_by_category",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L105",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_list_items_by_category",
+      "target": "uuid",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L105",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_list_items_by_category",
+      "target": "asyncsession",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L105",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_py",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_get_item",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L114",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_get_item",
+      "target": "uuid",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L114",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_get_item",
+      "target": "asyncsession",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L114",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_py",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_create_item",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L126",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_create_item",
+      "target": "menuitemcreate",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L126",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_create_item",
+      "target": "asyncsession",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L126",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_create_item",
+      "target": "profileresponse",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L126",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_py",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_update_item",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L136",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_update_item",
+      "target": "uuid",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L136",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_update_item",
+      "target": "menuitemupdate",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L136",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_update_item",
+      "target": "asyncsession",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L136",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_update_item",
+      "target": "profileresponse",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L136",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_py",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_delete_item",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L150",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_delete_item",
+      "target": "uuid",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L150",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_delete_item",
+      "target": "asyncsession",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L150",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_delete_item",
+      "target": "profileresponse",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L150",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_py",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_import_items",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L162",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_import_items",
+      "target": "uploadfile",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L162",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_import_items",
+      "target": "asyncsession",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L162",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_import_items",
+      "target": "profileresponse",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L162",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_import_items",
+      "target": "uuid",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L175",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_core_supabase_py",
+      "target": "logging",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/core/supabase.py",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_core_supabase_py",
+      "target": "typing",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/core/supabase.py",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_core_supabase_py",
+      "target": "supabase",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/core/supabase.py",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_core_supabase_py",
+      "target": "core_config",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/core/supabase.py",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_core_supabase_py",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_core_supabase_get_supabase",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/core/supabase.py",
+      "source_location": "L28",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_core_supabase_get_supabase",
+      "target": "client",
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/core/supabase.py",
+      "source_location": "L28",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_core_supabase_py",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_core_supabase_get_supabase_admin",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/core/supabase.py",
+      "source_location": "L36",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_core_supabase_get_supabase_admin",
+      "target": "client",
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/core/supabase.py",
+      "source_location": "L36",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_core_supabase_py",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_core_supabase_sign_in_with_password",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/core/supabase.py",
+      "source_location": "L46",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_core_supabase_sign_in_with_password",
+      "target": "any",
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/core/supabase.py",
+      "source_location": "L46",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_core_supabase_py",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_core_supabase_get_user_by_email",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/core/supabase.py",
+      "source_location": "L68",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_core_supabase_get_user_by_email",
+      "target": "any",
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/core/supabase.py",
+      "source_location": "L68",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_core_supabase_py",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_core_supabase_create_auth_user",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/core/supabase.py",
+      "source_location": "L86",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_core_supabase_create_auth_user",
+      "target": "any",
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/core/supabase.py",
+      "source_location": "L86",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_core_supabase_py",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_core_supabase_get_user_by_token",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/core/supabase.py",
+      "source_location": "L109",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_core_supabase_get_user_by_token",
+      "target": "any",
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/core/supabase.py",
+      "source_location": "L109",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_core_supabase_py",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_core_supabase_sign_out",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/core/supabase.py",
+      "source_location": "L128",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_core_supabase_sign_in_with_password",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_core_supabase_get_supabase",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/core/supabase.py",
+      "source_location": "L52",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_core_supabase_get_user_by_email",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_core_supabase_get_supabase_admin",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/core/supabase.py",
+      "source_location": "L74",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_core_supabase_create_auth_user",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_core_supabase_get_supabase_admin",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/core/supabase.py",
+      "source_location": "L92",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_core_supabase_get_user_by_token",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_core_supabase_get_supabase_admin",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/core/supabase.py",
+      "source_location": "L115",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_core_supabase_sign_out",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_core_supabase_get_supabase_admin",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/core/supabase.py",
+      "source_location": "L131",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_core_supabase_rationale_1",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_core_supabase_py",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/core/supabase.py",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_core_supabase_rationale_29",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_core_supabase_get_supabase",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/core/supabase.py",
+      "source_location": "L29",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_core_supabase_rationale_37",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_core_supabase_get_supabase_admin",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/core/supabase.py",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_core_supabase_rationale_47",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_core_supabase_sign_in_with_password",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/core/supabase.py",
+      "source_location": "L47",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_core_supabase_rationale_69",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_core_supabase_get_user_by_email",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/core/supabase.py",
+      "source_location": "L69",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_core_supabase_rationale_87",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_core_supabase_create_auth_user",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/core/supabase.py",
+      "source_location": "L87",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_core_supabase_rationale_110",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_core_supabase_get_user_by_token",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/core/supabase.py",
+      "source_location": "L110",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_core_supabase_rationale_129",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_core_supabase_sign_out",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/core/supabase.py",
+      "source_location": "L129",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_models_menu_item_py",
+      "target": "uuid",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/models/menu_item.py",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_models_menu_item_py",
+      "target": "sqlalchemy",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/models/menu_item.py",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_models_menu_item_py",
+      "target": "sqlalchemy_dialects_postgresql",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/models/menu_item.py",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_models_menu_item_py",
+      "target": "sqlalchemy_orm",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/models/menu_item.py",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_models_menu_item_py",
+      "target": "models_base",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/models/menu_item.py",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_models_menu_item_py",
+      "target": "models_menu_category",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/models/menu_item.py",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_models_menu_item_py",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_models_menu_item_menuitem",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/models/menu_item.py",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_models_menu_item_menuitem",
+      "target": "pkmixin",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/models/menu_item.py",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_models_menu_item_menuitem",
+      "target": "timestampmixin",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/models/menu_item.py",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_models_menu_item_menuitem",
+      "target": "base",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/models/menu_item.py",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "pkg_backend",
+      "target": "pkg_asyncpg",
+      "relation": "depends_on",
+      "context": "dependency",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/pyproject.toml",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "pkg_backend",
+      "target": "pkg_fastapi",
+      "relation": "depends_on",
+      "context": "dependency",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/pyproject.toml",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "pkg_backend",
+      "target": "pkg_openpyxl",
+      "relation": "depends_on",
+      "context": "dependency",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/pyproject.toml",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "pkg_backend",
+      "target": "pkg_pydantic",
+      "relation": "depends_on",
+      "context": "dependency",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/pyproject.toml",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "pkg_backend",
+      "target": "pkg_pydantic_settings",
+      "relation": "depends_on",
+      "context": "dependency",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/pyproject.toml",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "pkg_backend",
+      "target": "pkg_sqlalchemy",
+      "relation": "depends_on",
+      "context": "dependency",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/pyproject.toml",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "pkg_backend",
+      "target": "pkg_supabase",
+      "relation": "depends_on",
+      "context": "dependency",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/pyproject.toml",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_schemas_menu_item_py",
+      "target": "uuid",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/schemas/menu_item.py",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_schemas_menu_item_py",
+      "target": "datetime",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/schemas/menu_item.py",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_schemas_menu_item_py",
+      "target": "pydantic",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/schemas/menu_item.py",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_schemas_menu_item_py",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_schemas_menu_item_menuitembase",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/schemas/menu_item.py",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_schemas_menu_item_menuitembase",
+      "target": "basemodel",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/schemas/menu_item.py",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_schemas_menu_item_py",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_schemas_menu_item_menuitemcreate",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/schemas/menu_item.py",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_schemas_menu_item_menuitemcreate",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_schemas_menu_item_menuitembase",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/schemas/menu_item.py",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_schemas_menu_item_py",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_schemas_menu_item_menuitemupdate",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/schemas/menu_item.py",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_schemas_menu_item_menuitemupdate",
+      "target": "basemodel",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/schemas/menu_item.py",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_schemas_menu_item_py",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_schemas_menu_item_menuitemresponse",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/schemas/menu_item.py",
+      "source_location": "L36",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_schemas_menu_item_menuitemresponse",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_schemas_menu_item_menuitembase",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/schemas/menu_item.py",
+      "source_location": "L36",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_schemas_menu_item_py",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_schemas_menu_item_menuitemimportrow",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/schemas/menu_item.py",
+      "source_location": "L44",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_schemas_menu_item_menuitemimportrow",
+      "target": "basemodel",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/schemas/menu_item.py",
+      "source_location": "L44",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_schemas_menu_item_py",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_schemas_menu_item_menuitemimportresult",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/schemas/menu_item.py",
+      "source_location": "L54",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_schemas_menu_item_menuitemimportresult",
+      "target": "basemodel",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/schemas/menu_item.py",
+      "source_location": "L54",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_scripts_seed_auth_users_py",
+      "target": "asyncio",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/scripts/seed_auth_users.py",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_scripts_seed_auth_users_py",
+      "target": "os",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/scripts/seed_auth_users.py",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_scripts_seed_auth_users_py",
+      "target": "sys",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/scripts/seed_auth_users.py",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_scripts_seed_auth_users_py",
+      "target": "uuid",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/scripts/seed_auth_users.py",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_scripts_seed_auth_users_py",
+      "target": "sqlalchemy",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/scripts/seed_auth_users.py",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_scripts_seed_auth_users_py",
+      "target": "sqlalchemy_ext_asyncio",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/scripts/seed_auth_users.py",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_scripts_seed_auth_users_py",
+      "target": "core_config",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/scripts/seed_auth_users.py",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_scripts_seed_auth_users_py",
+      "target": "core_supabase",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/scripts/seed_auth_users.py",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_scripts_seed_auth_users_py",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_scripts_seed_auth_users_print_header",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/scripts/seed_auth_users.py",
+      "source_location": "L35",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_scripts_seed_auth_users_py",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_scripts_seed_auth_users_find_or_create_user",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/scripts/seed_auth_users.py",
+      "source_location": "L41",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_scripts_seed_auth_users_py",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_scripts_seed_auth_users_create_profile_in_db",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/scripts/seed_auth_users.py",
+      "source_location": "L58",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_scripts_seed_auth_users_create_profile_in_db",
+      "target": "asyncsession",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/scripts/seed_auth_users.py",
+      "source_location": "L58",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_scripts_seed_auth_users_py",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_scripts_seed_auth_users_main",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/scripts/seed_auth_users.py",
+      "source_location": "L93",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_scripts_seed_auth_users_main",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_scripts_seed_auth_users_print_header",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/scripts/seed_auth_users.py",
+      "source_location": "L94",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_scripts_seed_auth_users_main",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_scripts_seed_auth_users_find_or_create_user",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/scripts/seed_auth_users.py",
+      "source_location": "L97",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_scripts_seed_auth_users_main",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_scripts_seed_auth_users_create_profile_in_db",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/scripts/seed_auth_users.py",
+      "source_location": "L110",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_scripts_seed_auth_users_rationale_1",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_scripts_seed_auth_users_py",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/scripts/seed_auth_users.py",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_scripts_seed_auth_users_rationale_42",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_scripts_seed_auth_users_find_or_create_user",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/scripts/seed_auth_users.py",
+      "source_location": "L42",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_scripts_seed_auth_users_rationale_66",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_scripts_seed_auth_users_create_profile_in_db",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/scripts/seed_auth_users.py",
+      "source_location": "L66",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_py",
+      "target": "csv",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_py",
+      "target": "io",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_py",
+      "target": "uuid",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_py",
+      "target": "fastapi",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_py",
+      "target": "sqlalchemy_ext_asyncio",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_py",
+      "target": "repositories_menu_category",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_py",
+      "target": "repositories_menu_item",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_py",
+      "target": "schemas_menu_category",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_py",
+      "target": "schemas_menu_item",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_py",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice_init",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice_init",
+      "target": "asyncsession",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice_list_categories",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L30",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice_list_categories",
+      "target": "uuid",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L30",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice_list_categories",
+      "target": "menucategoryresponse",
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L30",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice_list_active_categories",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L33",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice_list_active_categories",
+      "target": "uuid",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L33",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice_list_active_categories",
+      "target": "menucategoryresponse",
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L33",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice_get_category",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L36",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice_get_category",
+      "target": "uuid",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L36",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice_get_category",
+      "target": "menucategoryresponse",
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L36",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice_create_category",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L39",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice_create_category",
+      "target": "menucategorycreate",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L39",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice_create_category",
+      "target": "menucategoryresponse",
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L39",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice_update_category",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L42",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice_update_category",
+      "target": "uuid",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L42",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice_update_category",
+      "target": "menucategoryupdate",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L42",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice_update_category",
+      "target": "menucategoryresponse",
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L42",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice_delete_category",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L45",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice_delete_category",
+      "target": "uuid",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L45",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice_list_items",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L49",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice_list_items",
+      "target": "uuid",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L49",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice_list_items",
+      "target": "menuitemresponse",
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L49",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice_list_available_items",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L52",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice_list_available_items",
+      "target": "uuid",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L52",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice_list_available_items",
+      "target": "menuitemresponse",
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L52",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice_list_items_by_category",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L55",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice_list_items_by_category",
+      "target": "uuid",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L55",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice_list_items_by_category",
+      "target": "menuitemresponse",
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L55",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice_get_item",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L58",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice_get_item",
+      "target": "uuid",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L58",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice_get_item",
+      "target": "menuitemresponse",
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L58",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice_create_item",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L61",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice_create_item",
+      "target": "menuitemcreate",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L61",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice_create_item",
+      "target": "menuitemresponse",
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L61",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice_update_item",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L64",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice_update_item",
+      "target": "uuid",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L64",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice_update_item",
+      "target": "menuitemupdate",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L64",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice_update_item",
+      "target": "menuitemresponse",
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L64",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice_delete_item",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L67",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice_delete_item",
+      "target": "uuid",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L67",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice_import_items",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L71",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice_import_items",
+      "target": "uuid",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L71",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice_import_items",
+      "target": "uploadfile",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L71",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice_import_items",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_schemas_menu_item_menuitemimportresult",
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L71",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice_parse_csv",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L117",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice_parse_xlsx",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L124",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice_normalize_row",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L146",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice_import_items",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice_parse_csv",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L78",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice_import_items",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice_parse_xlsx",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L80",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice_import_items",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_schemas_menu_item_menuitemimportresult",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L87",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice_import_items",
+      "target": "menuitemcreate",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L100",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice_parse_csv",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice_normalize_row",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L121",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice_parse_xlsx",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice_normalize_row",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/menu.py",
+      "source_location": "L143",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_next_env_d",
+      "target": "home_manuel_documentos_pagamesa_frontend_next_dev_types_routes_d_ts",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/next-env.d.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_next_env_d_rationale_5",
+      "target": "frontend_next_env_d",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/next-env.d.ts",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_menu_payment_page",
+      "target": "ref_react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/(menu)/payment/page.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_menu_payment_page",
+      "target": "ref_next_navigation",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/(menu)/payment/page.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_menu_payment_page",
+      "target": "ref_lucide_react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/(menu)/payment/page.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_menu_payment_page",
+      "target": "home_manuel_documentos_pagamesa_frontend_src_lib_mock_data_ts",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/(menu)/payment/page.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_menu_payment_page",
+      "target": "home_manuel_documentos_pagamesa_frontend_src_lib_mock_data_mockbankdetails",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/(menu)/payment/page.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_menu_payment_page",
+      "target": "home_manuel_documentos_pagamesa_frontend_src_components_ui_sheet_tsx",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/(menu)/payment/page.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_menu_payment_page",
+      "target": "home_manuel_documentos_pagamesa_frontend_src_components_ui_sheet_sheet",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/(menu)/payment/page.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_menu_payment_page",
+      "target": "home_manuel_documentos_pagamesa_frontend_src_components_ui_sheet_sheetcontent",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/(menu)/payment/page.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_menu_payment_page",
+      "target": "home_manuel_documentos_pagamesa_frontend_src_components_ui_sheet_sheetdescription",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/(menu)/payment/page.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_menu_payment_page",
+      "target": "home_manuel_documentos_pagamesa_frontend_src_components_ui_sheet_sheetfooter",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/(menu)/payment/page.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_menu_payment_page",
+      "target": "home_manuel_documentos_pagamesa_frontend_src_components_ui_sheet_sheetheader",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/(menu)/payment/page.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_menu_payment_page",
+      "target": "home_manuel_documentos_pagamesa_frontend_src_components_ui_sheet_sheettitle",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/(menu)/payment/page.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_menu_payment_page",
+      "target": "home_manuel_documentos_pagamesa_frontend_src_components_ui_input_tsx",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/(menu)/payment/page.tsx",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_menu_payment_page",
+      "target": "home_manuel_documentos_pagamesa_frontend_src_components_ui_input_input",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/(menu)/payment/page.tsx",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_menu_payment_page",
+      "target": "home_manuel_documentos_pagamesa_frontend_src_components_ui_label_tsx",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/(menu)/payment/page.tsx",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_menu_payment_page",
+      "target": "home_manuel_documentos_pagamesa_frontend_src_components_ui_label_label",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/(menu)/payment/page.tsx",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_menu_payment_page",
+      "target": "frontend_src_app_menu_payment_page_copybutton",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/(menu)/payment/page.tsx",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_menu_payment_page",
+      "target": "frontend_src_app_menu_payment_page_paymentcontent",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/(menu)/payment/page.tsx",
+      "source_location": "L52",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_menu_payment_page",
+      "target": "frontend_src_app_menu_payment_page_paymentpage",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/(menu)/payment/page.tsx",
+      "source_location": "L229",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_admin_commission_page",
+      "target": "ref_react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/admin/commission/page.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_admin_commission_page",
+      "target": "ref_next_navigation",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/admin/commission/page.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_admin_commission_page",
+      "target": "ref_lucide_react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/admin/commission/page.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_admin_commission_page",
+      "target": "home_manuel_documentos_pagamesa_frontend_src_stores_auth_ts",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/admin/commission/page.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_admin_commission_page",
+      "target": "home_manuel_documentos_pagamesa_frontend_src_stores_auth_useauthstore",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/admin/commission/page.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_admin_commission_page",
+      "target": "frontend_src_lib_mock_admin",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/admin/commission/page.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_admin_commission_page",
+      "target": "frontend_src_lib_mock_admin_getorders",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/admin/commission/page.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_admin_commission_page",
+      "target": "frontend_src_app_admin_commission_page_commissionpage",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/admin/commission/page.tsx",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_admin_layout",
+      "target": "ref_next_link",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/admin/layout.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_admin_layout",
+      "target": "ref_next_navigation",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/admin/layout.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_admin_layout",
+      "target": "ref_lucide_react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/admin/layout.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_admin_layout",
+      "target": "home_manuel_documentos_pagamesa_frontend_src_lib_utils_ts",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/admin/layout.tsx",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_admin_layout",
+      "target": "home_manuel_documentos_pagamesa_frontend_src_lib_utils_cn",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/admin/layout.tsx",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_admin_layout",
+      "target": "home_manuel_documentos_pagamesa_frontend_src_stores_auth_ts",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/admin/layout.tsx",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_admin_layout",
+      "target": "home_manuel_documentos_pagamesa_frontend_src_stores_auth_useauthstore",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/admin/layout.tsx",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_admin_layout",
+      "target": "frontend_src_app_admin_layout_navitems",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/admin/layout.tsx",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_admin_layout",
+      "target": "frontend_src_app_admin_layout_adminlayout",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/admin/layout.tsx",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_admin_login_page",
+      "target": "ref_react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/admin/login/page.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_admin_login_page",
+      "target": "ref_next_navigation",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/admin/login/page.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_admin_login_page",
+      "target": "ref_lucide_react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/admin/login/page.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_admin_login_page",
+      "target": "home_manuel_documentos_pagamesa_frontend_src_stores_auth_ts",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/admin/login/page.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_admin_login_page",
+      "target": "home_manuel_documentos_pagamesa_frontend_src_stores_auth_useauthstore",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/admin/login/page.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_admin_login_page",
+      "target": "frontend_src_lib_api",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/admin/login/page.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_admin_login_page",
+      "target": "frontend_src_lib_api_api",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/admin/login/page.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_admin_login_page",
+      "target": "frontend_src_app_admin_login_page_loginpage",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/admin/login/page.tsx",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_admin_menu_page",
+      "target": "ref_react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/admin/menu/page.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_admin_menu_page",
+      "target": "ref_next_navigation",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/admin/menu/page.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_admin_menu_page",
+      "target": "ref_lucide_react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/admin/menu/page.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_admin_menu_page",
+      "target": "home_manuel_documentos_pagamesa_frontend_src_components_ui_button_tsx",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/admin/menu/page.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_admin_menu_page",
+      "target": "home_manuel_documentos_pagamesa_frontend_src_components_ui_button_button",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/admin/menu/page.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_admin_menu_page",
+      "target": "home_manuel_documentos_pagamesa_frontend_src_components_ui_badge_tsx",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/admin/menu/page.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_admin_menu_page",
+      "target": "home_manuel_documentos_pagamesa_frontend_src_components_ui_badge_badge",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/admin/menu/page.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_admin_menu_page",
+      "target": "home_manuel_documentos_pagamesa_frontend_src_components_ui_switch_tsx",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/admin/menu/page.tsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_admin_menu_page",
+      "target": "home_manuel_documentos_pagamesa_frontend_src_components_ui_switch_switch",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/admin/menu/page.tsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_admin_menu_page",
+      "target": "home_manuel_documentos_pagamesa_frontend_src_stores_auth_ts",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/admin/menu/page.tsx",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_admin_menu_page",
+      "target": "home_manuel_documentos_pagamesa_frontend_src_stores_auth_useauthstore",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/admin/menu/page.tsx",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_admin_menu_page",
+      "target": "frontend_src_lib_api",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/admin/menu/page.tsx",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_admin_menu_page",
+      "target": "frontend_src_lib_api_api",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/admin/menu/page.tsx",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_admin_menu_page",
+      "target": "frontend_src_components_admin_menu_item_form",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/admin/menu/page.tsx",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_admin_menu_page",
+      "target": "frontend_src_components_admin_menu_item_form_menuitemform",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/admin/menu/page.tsx",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_admin_menu_page",
+      "target": "frontend_src_components_admin_menu_import_modal",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/admin/menu/page.tsx",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_admin_menu_page",
+      "target": "frontend_src_components_admin_menu_import_modal_menuimportmodal",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/admin/menu/page.tsx",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_admin_menu_page",
+      "target": "frontend_src_app_admin_menu_page_category",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/admin/menu/page.tsx",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_admin_menu_page",
+      "target": "frontend_src_app_admin_menu_page_menuitemdata",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/admin/menu/page.tsx",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_admin_menu_page",
+      "target": "frontend_src_app_admin_menu_page_adminmenupage",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/admin/menu/page.tsx",
+      "source_location": "L30",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_admin_orders_page",
+      "target": "ref_react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/admin/orders/page.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_admin_orders_page",
+      "target": "ref_lucide_react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/admin/orders/page.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_admin_orders_page",
+      "target": "frontend_src_lib_mock_admin",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/admin/orders/page.tsx",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_admin_orders_page",
+      "target": "frontend_src_lib_mock_admin_getorders",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/admin/orders/page.tsx",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_admin_orders_page",
+      "target": "frontend_src_lib_mock_admin_orderstatuslabels",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/admin/orders/page.tsx",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_admin_orders_page",
+      "target": "frontend_src_lib_mock_admin_orderstatuscolors",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/admin/orders/page.tsx",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_admin_orders_page",
+      "target": "frontend_src_lib_mock_admin_orderstatustype",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/admin/orders/page.tsx",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_admin_orders_page",
+      "target": "frontend_src_lib_mock_admin_adminorder",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/admin/orders/page.tsx",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_admin_orders_page",
+      "target": "frontend_src_app_admin_orders_page_statusfilters",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/admin/orders/page.tsx",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_admin_orders_page",
+      "target": "frontend_src_app_admin_orders_page_orderspage",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/admin/orders/page.tsx",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_admin_orders_page",
+      "target": "frontend_src_app_admin_orders_page_th",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/admin/orders/page.tsx",
+      "source_location": "L342",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_admin_page",
+      "target": "ref_react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/admin/page.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_admin_page",
+      "target": "ref_next_navigation",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/admin/page.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_admin_page",
+      "target": "ref_lucide_react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/admin/page.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_admin_page",
+      "target": "home_manuel_documentos_pagamesa_frontend_src_stores_auth_ts",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/admin/page.tsx",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_admin_page",
+      "target": "home_manuel_documentos_pagamesa_frontend_src_stores_auth_useauthstore",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/admin/page.tsx",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_admin_page",
+      "target": "frontend_src_lib_mock_admin",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/admin/page.tsx",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_admin_page",
+      "target": "frontend_src_lib_mock_admin_mockadminstats",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/admin/page.tsx",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_admin_page",
+      "target": "frontend_src_lib_mock_admin_mockorderstatuses",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/admin/page.tsx",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_admin_page",
+      "target": "frontend_src_lib_mock_admin_mockactivities",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/admin/page.tsx",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_admin_page",
+      "target": "frontend_src_lib_mock_admin_getpendingpayments",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/admin/page.tsx",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_admin_page",
+      "target": "frontend_src_lib_mock_admin_addorder",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/admin/page.tsx",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_admin_page",
+      "target": "frontend_src_lib_mock_admin_removependingpayment",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/admin/page.tsx",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_admin_page",
+      "target": "frontend_src_lib_mock_admin_pendingpayment",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/admin/page.tsx",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_admin_page",
+      "target": "frontend_src_app_admin_page_activityiconmap",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/admin/page.tsx",
+      "source_location": "L29",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_admin_page",
+      "target": "frontend_src_app_admin_page_admindashboard",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/admin/page.tsx",
+      "source_location": "L36",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_admin_page",
+      "target": "frontend_src_app_admin_page_pendingpaymentcard",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/admin/page.tsx",
+      "source_location": "L312",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_layout",
+      "target": "ref_next",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/layout.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_layout",
+      "target": "ref_next_font_google",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/layout.tsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_layout",
+      "target": "home_manuel_documentos_pagamesa_frontend_src_app_providers_tsx",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/layout.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_layout",
+      "target": "home_manuel_documentos_pagamesa_frontend_src_app_providers_providers",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/layout.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_layout",
+      "target": "home_manuel_documentos_pagamesa_frontend_src_app_globals_css",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/layout.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_layout",
+      "target": "frontend_src_app_layout_karla",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/layout.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_layout",
+      "target": "frontend_src_app_layout_nunito",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/layout.tsx",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_layout",
+      "target": "frontend_src_app_layout_metadata",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/layout.tsx",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_layout",
+      "target": "frontend_src_app_layout_rootlayout",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/app/layout.tsx",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_admin_menu_import_modal",
+      "target": "ref_react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/admin/menu-import-modal.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_admin_menu_import_modal",
+      "target": "home_manuel_documentos_pagamesa_frontend_src_components_ui_dialog_tsx",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/admin/menu-import-modal.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_admin_menu_import_modal",
+      "target": "home_manuel_documentos_pagamesa_frontend_src_components_ui_dialog_dialog",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/admin/menu-import-modal.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_admin_menu_import_modal",
+      "target": "home_manuel_documentos_pagamesa_frontend_src_components_ui_dialog_dialogcontent",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/admin/menu-import-modal.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_admin_menu_import_modal",
+      "target": "home_manuel_documentos_pagamesa_frontend_src_components_ui_dialog_dialogheader",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/admin/menu-import-modal.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_admin_menu_import_modal",
+      "target": "home_manuel_documentos_pagamesa_frontend_src_components_ui_dialog_dialogtitle",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/admin/menu-import-modal.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_admin_menu_import_modal",
+      "target": "home_manuel_documentos_pagamesa_frontend_src_components_ui_dialog_dialogdescription",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/admin/menu-import-modal.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_admin_menu_import_modal",
+      "target": "home_manuel_documentos_pagamesa_frontend_src_components_ui_button_tsx",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/admin/menu-import-modal.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_admin_menu_import_modal",
+      "target": "home_manuel_documentos_pagamesa_frontend_src_components_ui_button_button",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/admin/menu-import-modal.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_admin_menu_import_modal",
+      "target": "ref_lucide_react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/admin/menu-import-modal.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_admin_menu_import_modal",
+      "target": "frontend_src_lib_api",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/admin/menu-import-modal.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_admin_menu_import_modal",
+      "target": "frontend_src_lib_api_api",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/admin/menu-import-modal.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_admin_menu_import_modal",
+      "target": "frontend_src_components_admin_menu_import_modal_importresult",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/admin/menu-import-modal.tsx",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_admin_menu_import_modal",
+      "target": "frontend_src_components_admin_menu_import_modal_props",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/admin/menu-import-modal.tsx",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_admin_menu_import_modal",
+      "target": "frontend_src_components_admin_menu_import_modal_step",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/admin/menu-import-modal.tsx",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_admin_menu_import_modal",
+      "target": "frontend_src_components_admin_menu_import_modal_menuimportmodal",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/admin/menu-import-modal.tsx",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_admin_menu_item_form",
+      "target": "ref_react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/admin/menu-item-form.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_admin_menu_item_form",
+      "target": "home_manuel_documentos_pagamesa_frontend_src_components_ui_dialog_tsx",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/admin/menu-item-form.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_admin_menu_item_form",
+      "target": "home_manuel_documentos_pagamesa_frontend_src_components_ui_dialog_dialog",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/admin/menu-item-form.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_admin_menu_item_form",
+      "target": "home_manuel_documentos_pagamesa_frontend_src_components_ui_dialog_dialogcontent",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/admin/menu-item-form.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_admin_menu_item_form",
+      "target": "home_manuel_documentos_pagamesa_frontend_src_components_ui_dialog_dialogheader",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/admin/menu-item-form.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_admin_menu_item_form",
+      "target": "home_manuel_documentos_pagamesa_frontend_src_components_ui_dialog_dialogtitle",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/admin/menu-item-form.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_admin_menu_item_form",
+      "target": "home_manuel_documentos_pagamesa_frontend_src_components_ui_dialog_dialogdescription",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/admin/menu-item-form.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_admin_menu_item_form",
+      "target": "home_manuel_documentos_pagamesa_frontend_src_components_ui_button_tsx",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/admin/menu-item-form.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_admin_menu_item_form",
+      "target": "home_manuel_documentos_pagamesa_frontend_src_components_ui_button_button",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/admin/menu-item-form.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_admin_menu_item_form",
+      "target": "home_manuel_documentos_pagamesa_frontend_src_components_ui_input_tsx",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/admin/menu-item-form.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_admin_menu_item_form",
+      "target": "home_manuel_documentos_pagamesa_frontend_src_components_ui_input_input",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/admin/menu-item-form.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_admin_menu_item_form",
+      "target": "home_manuel_documentos_pagamesa_frontend_src_components_ui_label_tsx",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/admin/menu-item-form.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_admin_menu_item_form",
+      "target": "home_manuel_documentos_pagamesa_frontend_src_components_ui_label_label",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/admin/menu-item-form.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_admin_menu_item_form",
+      "target": "home_manuel_documentos_pagamesa_frontend_src_components_ui_select_tsx",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/admin/menu-item-form.tsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_admin_menu_item_form",
+      "target": "home_manuel_documentos_pagamesa_frontend_src_components_ui_select_select",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/admin/menu-item-form.tsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_admin_menu_item_form",
+      "target": "home_manuel_documentos_pagamesa_frontend_src_components_ui_select_selectcontent",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/admin/menu-item-form.tsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_admin_menu_item_form",
+      "target": "home_manuel_documentos_pagamesa_frontend_src_components_ui_select_selectitem",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/admin/menu-item-form.tsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_admin_menu_item_form",
+      "target": "home_manuel_documentos_pagamesa_frontend_src_components_ui_select_selecttrigger",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/admin/menu-item-form.tsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_admin_menu_item_form",
+      "target": "home_manuel_documentos_pagamesa_frontend_src_components_ui_select_selectvalue",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/admin/menu-item-form.tsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_admin_menu_item_form",
+      "target": "home_manuel_documentos_pagamesa_frontend_src_components_ui_switch_tsx",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/admin/menu-item-form.tsx",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_admin_menu_item_form",
+      "target": "home_manuel_documentos_pagamesa_frontend_src_components_ui_switch_switch",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/admin/menu-item-form.tsx",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_admin_menu_item_form",
+      "target": "ref_lucide_react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/admin/menu-item-form.tsx",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_admin_menu_item_form",
+      "target": "frontend_src_lib_api",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/admin/menu-item-form.tsx",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_admin_menu_item_form",
+      "target": "frontend_src_lib_api_api",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/admin/menu-item-form.tsx",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_admin_menu_item_form",
+      "target": "frontend_src_components_admin_menu_item_form_category",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/admin/menu-item-form.tsx",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_admin_menu_item_form",
+      "target": "frontend_src_components_admin_menu_item_form_menuitemformdata",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/admin/menu-item-form.tsx",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_admin_menu_item_form",
+      "target": "frontend_src_components_admin_menu_item_form_menuitemresponse",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/admin/menu-item-form.tsx",
+      "source_location": "L28",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_admin_menu_item_form",
+      "target": "frontend_src_components_admin_menu_item_form_props",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/admin/menu-item-form.tsx",
+      "source_location": "L39",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_admin_menu_item_form",
+      "target": "frontend_src_components_admin_menu_item_form_menuitemform",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/admin/menu-item-form.tsx",
+      "source_location": "L47",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_lib_api",
+      "target": "frontend_src_lib_constants",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/lib/api.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_lib_api",
+      "target": "home_manuel_documentos_pagamesa_frontend_src_lib_constants_api_base_url",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/lib/api.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_lib_api",
+      "target": "frontend_src_lib_api_apierror",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/lib/api.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_lib_api_apierror",
+      "target": "frontend_src_lib_api_apierror_constructor",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/lib/api.ts",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_lib_api",
+      "target": "frontend_src_lib_api_request",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/lib/api.ts",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_lib_api",
+      "target": "frontend_src_lib_api_uploadfile",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/lib/api.ts",
+      "source_location": "L41",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_lib_api",
+      "target": "frontend_src_lib_api_api",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/lib/api.ts",
+      "source_location": "L78",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_lib_constants",
+      "target": "frontend_src_lib_constants_order_statuses",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/lib/constants.ts",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_lib_constants",
+      "target": "frontend_src_lib_constants_orderstatus",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/lib/constants.ts",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_lib_constants",
+      "target": "frontend_src_lib_constants_payment_statuses",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/lib/constants.ts",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_lib_constants",
+      "target": "frontend_src_lib_constants_paymentstatus",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/lib/constants.ts",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_lib_mock_admin",
+      "target": "frontend_src_lib_mock_admin_adminstats",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/lib/mock-admin.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_lib_mock_admin",
+      "target": "frontend_src_lib_mock_admin_pendingpayment",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/lib/mock-admin.ts",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_lib_mock_admin",
+      "target": "frontend_src_lib_mock_admin_orderstatus",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/lib/mock-admin.ts",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_lib_mock_admin",
+      "target": "frontend_src_lib_mock_admin_activity",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/lib/mock-admin.ts",
+      "source_location": "L31",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_lib_mock_admin",
+      "target": "frontend_src_lib_mock_admin_mockadminstats",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/lib/mock-admin.ts",
+      "source_location": "L38",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_lib_mock_admin",
+      "target": "frontend_src_lib_mock_admin_mockpendingpayments",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/lib/mock-admin.ts",
+      "source_location": "L48",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_lib_mock_admin",
+      "target": "frontend_src_lib_mock_admin_mockorderstatuses",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/lib/mock-admin.ts",
+      "source_location": "L111",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_lib_mock_admin",
+      "target": "frontend_src_lib_mock_admin_adminorder",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/lib/mock-admin.ts",
+      "source_location": "L116",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_lib_mock_admin",
+      "target": "frontend_src_lib_mock_admin_orderstatustype",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/lib/mock-admin.ts",
+      "source_location": "L131",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_lib_mock_admin",
+      "target": "frontend_src_lib_mock_admin_orderstatuslabels",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/lib/mock-admin.ts",
+      "source_location": "L133",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_lib_mock_admin",
+      "target": "frontend_src_lib_mock_admin_orderstatuscolors",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/lib/mock-admin.ts",
+      "source_location": "L138",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_lib_mock_admin",
+      "target": "frontend_src_lib_mock_admin_adminorders",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/lib/mock-admin.ts",
+      "source_location": "L144",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_lib_mock_admin",
+      "target": "frontend_src_lib_mock_admin_pendinglist",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/lib/mock-admin.ts",
+      "source_location": "L175",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_lib_mock_admin",
+      "target": "frontend_src_lib_mock_admin_getorders",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/lib/mock-admin.ts",
+      "source_location": "L238",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_lib_mock_admin",
+      "target": "frontend_src_lib_mock_admin_addorder",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/lib/mock-admin.ts",
+      "source_location": "L242",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_lib_mock_admin",
+      "target": "frontend_src_lib_mock_admin_getpendingpayments",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/lib/mock-admin.ts",
+      "source_location": "L246",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_lib_mock_admin",
+      "target": "frontend_src_lib_mock_admin_removependingpayment",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/lib/mock-admin.ts",
+      "source_location": "L250",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_lib_mock_admin",
+      "target": "frontend_src_lib_mock_admin_mockactivities",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/lib/mock-admin.ts",
+      "source_location": "L254",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_list_categories",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_list_active_categories",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L32",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_get_category",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L41",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_create_category",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L54",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_update_category",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L65",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_delete_category",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L78",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_list_items",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L91",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_list_available_items",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L100",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_list_items_by_category",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L109",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_get_item",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L118",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_create_item",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L131",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_update_item",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L142",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_delete_item",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L155",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_api_v1_endpoints_menu_import_items",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend/api/v1/endpoints/menu.py",
+      "source_location": "L173",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_scripts_seed_auth_users_find_or_create_user",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_core_supabase_get_user_by_email",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend/scripts/seed_auth_users.py",
+      "source_location": "L44",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_scripts_seed_auth_users_find_or_create_user",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_core_supabase_create_auth_user",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend/scripts/seed_auth_users.py",
+      "source_location": "L50",
+      "weight": 1.0
+    },
+    {
+      "source": "home_manuel_documentos_saas_para_restaurantes_backend_services_menu_menuservice_import_items",
+      "target": "home_manuel_documentos_saas_para_restaurantes_backend_schemas_menu_item_menuitemimportrow",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend/services/menu.py",
+      "source_location": "L91",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_admin_commission_page_commissionpage",
+      "target": "frontend_src_lib_mock_admin_getorders",
+      "relation": "indirect_call",
+      "context": "argument",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "frontend/src/app/admin/commission/page.tsx",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_admin_orders_page_orderspage",
+      "target": "frontend_src_lib_mock_admin_getorders",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/src/app/admin/orders/page.tsx",
+      "source_location": "L36",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_admin_page_admindashboard",
+      "target": "frontend_src_lib_mock_admin_getpendingpayments",
+      "relation": "indirect_call",
+      "context": "argument",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "frontend/src/app/admin/page.tsx",
+      "source_location": "L40",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_admin_page_admindashboard",
+      "target": "frontend_src_lib_mock_admin_addorder",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/src/app/admin/page.tsx",
+      "source_location": "L53",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_admin_page_admindashboard",
+      "target": "frontend_src_lib_mock_admin_removependingpayment",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/src/app/admin/page.tsx",
+      "source_location": "L67",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_admin_page_admindashboard",
+      "target": "frontend_src_lib_mock_admin_getpendingpayments",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/src/app/admin/page.tsx",
+      "source_location": "L68",
+      "weight": 1.0
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}
