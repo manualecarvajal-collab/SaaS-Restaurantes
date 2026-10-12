@@ -1,16 +1,24 @@
 """
-Seed runner: creates auth users + runs seed data against Supabase.
+Seed runner: creates the auth users and loads the seed data into Supabase.
 
-Usage:
-    uv run scripts/seed.py
+Run from the backend/ directory so that backend/.env is picked up:
+
+    uv run python scripts/seed.py
+
+Auth users are created with the Supabase Auth Admin API (the only supported
+way to create them with a fixed id). The seed SQL is executed over a direct
+PostgreSQL connection with asyncpg.
 
 Requires:
-    SUPABASE_URL, SUPABASE_SERVICE_KEY in .env
+    SUPABASE_URL, SUPABASE_SERVICE_KEY, DATABASE_URL,
+    SEED_SUPERADMIN_PASSWORD, SEED_ADMIN_PASSWORD  (all in backend/.env)
 """
 
+import asyncio
 import os
 import sys
 from pathlib import Path
+
 from dotenv import load_dotenv
 from httpx import Client, Timeout
 
@@ -18,35 +26,54 @@ load_dotenv()
 
 SUPABASE_URL = os.environ.get("SUPABASE_URL", "")
 SERVICE_KEY = os.environ.get("SUPABASE_SERVICE_KEY", "")
+DATABASE_URL = os.environ.get("DATABASE_URL", "")
+
+# Passwords are NOT hardcoded: this repository is public. Set them in backend/.env.
+SUPERADMIN_PASSWORD = os.environ.get("SEED_SUPERADMIN_PASSWORD", "")
+ADMIN_PASSWORD = os.environ.get("SEED_ADMIN_PASSWORD", "")
 
 if not SUPABASE_URL or not SERVICE_KEY:
     print("ERROR: SUPABASE_URL and SUPABASE_SERVICE_KEY must be set")
     sys.exit(1)
+if not DATABASE_URL:
+    print("ERROR: DATABASE_URL must be set")
+    sys.exit(1)
+if not SUPERADMIN_PASSWORD or not ADMIN_PASSWORD:
+    print("ERROR: SEED_SUPERADMIN_PASSWORD and SEED_ADMIN_PASSWORD must be set")
+    print("       Add them to backend/.env before running the seed.")
+    sys.exit(1)
 
 MIGRATIONS_DIR = Path(__file__).parent.parent / "migrations"
 
-# Fixed UUIDs for seed users (match IDs referenced in 003_seed_data.sql)
+# Fixed UUIDs for seed users (match the ids referenced in 003_seed_data.sql)
 SUPERADMIN_ID = "00000000-0000-0000-0000-000000000001"
-ADMIN_ID = "00000000-0000-0000-0000-000000000002"
+# Id of the admin account in the live project, kept so a reseed reproduces it.
+ADMIN_ID = "748f4186-c1d0-4ad3-bb2a-98c0e39c69c2"
 RESTAURANT_ID = "11111111-1111-1111-1111-111111111111"
 
 
-def execute_sql(sql: str, description: str) -> None:
-    url = f"{SUPABASE_URL}/sql/v1/sql"
-    headers = {
-        "apikey": SERVICE_KEY,
-        "Authorization": f"Bearer {SERVICE_KEY}",
-        "Content-Type": "application/json",
-    }
+def dsn() -> str:
+    """DATABASE_URL without the SQLAlchemy driver prefix asyncpg rejects."""
+    return DATABASE_URL.replace("postgresql+asyncpg://", "postgresql://")
 
-    with Client(timeout=Timeout(30.0)) as client:
-        response = client.post(url, headers=headers, json={"query": sql})
 
-    if response.status_code == 200:
-        print(f"  OK: {description}")
+def execute_sql(sql: str, description: str, params: tuple = ()) -> None:
+    """Run one SQL statement over a direct PostgreSQL connection."""
+    import asyncpg
+
+    async def run() -> None:
+        conn = await asyncpg.connect(dsn(), statement_cache_size=0)
+        try:
+            await conn.execute(sql, *params)
+        finally:
+            await conn.close()
+
+    try:
+        asyncio.run(run())
+    except Exception as exc:  # noqa: BLE001 - report and continue with the rest
+        print(f"  WARN: {description} -> {type(exc).__name__}: {exc}")
     else:
-        body = response.text[:500]
-        print(f"  WARN: {description} -> {response.status_code}: {body}")
+        print(f"  OK: {description}")
 
 
 def create_auth_user(
@@ -88,15 +115,17 @@ def create_profile(
     email: str,
     full_name: str,
     role: str,
-    restaurant_id: str = "NULL",
+    restaurant_id: str | None = None,
 ) -> None:
-    rid = f"'{restaurant_id}'" if restaurant_id != "NULL" else "NULL"
-    sql = f"""
-    INSERT INTO profiles (id, email, full_name, role, restaurant_id)
-    VALUES ('{user_id}', '{email}', '{full_name}', '{role}', {rid})
-    ON CONFLICT (id) DO NOTHING;
-    """
-    execute_sql(sql, f"Profile '{email}'")
+    execute_sql(
+        """
+        INSERT INTO profiles (id, email, full_name, role, restaurant_id)
+        VALUES ($1, $2, $3, $4, $5)
+        ON CONFLICT (id) DO NOTHING;
+        """,
+        f"Profile '{email}'",
+        (user_id, email, full_name, role, restaurant_id),
+    )
 
 
 def main() -> None:
@@ -105,8 +134,8 @@ def main() -> None:
     print("=" * 50)
 
     print("\n--- Creating Auth Users ---")
-    create_auth_user("superadmin@example.com", "SuperAdmin123!", SUPERADMIN_ID)
-    create_auth_user("admin@lacocina.com", "Admin123!", ADMIN_ID)
+    create_auth_user("superadmin@example.com", SUPERADMIN_PASSWORD, SUPERADMIN_ID)
+    create_auth_user("admin@admin.com", ADMIN_PASSWORD, ADMIN_ID)
 
     print("\n--- Creating Profiles ---")
     create_profile(
@@ -114,7 +143,7 @@ def main() -> None:
         "Super Admin", "superadmin",
     )
     create_profile(
-        ADMIN_ID, "admin@lacocina.com",
+        ADMIN_ID, "admin@admin.com",
         "Manuel Admin", "admin",
         RESTAURANT_ID,
     )
@@ -122,8 +151,7 @@ def main() -> None:
     print("\n--- Running Seed Data ---")
     seed_file = MIGRATIONS_DIR / "003_seed_data.sql"
     if seed_file.exists():
-        sql = seed_file.read_text(encoding="utf-8")
-        execute_sql(sql, "003_seed_data.sql")
+        execute_sql(seed_file.read_text(encoding="utf-8"), "003_seed_data.sql")
     else:
         print("  SKIP: 003_seed_data.sql not found")
 
@@ -131,9 +159,9 @@ def main() -> None:
     print("Seed completed successfully")
     print("=" * 50)
     print()
-    print("Credentials (for testing):")
-    print("  SuperAdmin: superadmin@example.com / SuperAdmin123!")
-    print("  Admin:      admin@lacocina.com / Admin123!")
+    print("Users created (passwords come from SEED_*_PASSWORD in backend/.env):")
+    print("  SuperAdmin: superadmin@example.com")
+    print("  Admin:      admin@admin.com")
     print()
     print("Restaurant: La Cocina de Don Manuel")
     print("  Slug: la-cocina-don-manuel")
