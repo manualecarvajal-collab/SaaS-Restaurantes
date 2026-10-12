@@ -3,8 +3,9 @@
 import { useSearchParams, useRouter } from "next/navigation";
 import { useState, Suspense } from "react";
 import { Search, UtensilsCrossed } from "lucide-react";
-import { mockMenuItems, mockTable, mockRestaurant } from "@/lib/mock-data";
+import { mockMenuItems, mockCategories, mockTable, mockRestaurant } from "@/lib/mock-data";
 import { MenuItemCard } from "@/components/client/menu-item-card";
+import { CategoryTabs } from "@/components/client/category-tabs";
 import { CartSheet } from "@/components/client/cart-sheet";
 import { QRScanner } from "@/components/client/qr-scanner";
 import { useCartStore } from "@/stores/cart";
@@ -14,6 +15,7 @@ function MenuContent() {
   const tableParam = searchParams.get("table");
   const hasTableContext = !!tableParam;
   const [searchQuery, setSearchQuery] = useState("");
+  const [activeCategory, setActiveCategory] = useState("all");
   const router = useRouter();
   const setTable = useCartStore((s) => s.setTable);
   const setRestaurant = useCartStore((s) => s.setRestaurant);
@@ -24,17 +26,22 @@ function MenuContent() {
     router.push(`/?table=${tableId}`);
   };
 
-  const items = mockMenuItems
-    .filter((item) => item.categoryId === "cat-2")
-    .filter((item) =>
-      item.name.toLowerCase().includes(searchQuery.toLowerCase())
-    );
+  const tabs = [{ id: "all", name: "Todos" }, ...mockCategories];
+
+  const query = searchQuery.trim().toLowerCase();
+  const items = mockMenuItems.filter((item) => {
+    // Searching looks across the whole menu; otherwise the tab decides.
+    const matchesCategory =
+      query !== "" || activeCategory === "all" || item.categoryId === activeCategory;
+    const matchesSearch = item.name.toLowerCase().includes(query);
+    return matchesCategory && matchesSearch;
+  });
 
   if (!hasTableContext) {
     return (
       <div className="flex flex-col items-center justify-center flex-1 p-8 gap-6 text-center">
         <div className="w-20 h-20 rounded-full bg-primary-container flex items-center justify-center">
-          <UtensilsCrossed className="size-10 text-primary" />
+          <UtensilsCrossed className="size-10 text-on-primary-container" />
         </div>
         <div>
           <h1 className="text-2xl font-heading font-bold text-foreground mb-2">
@@ -74,6 +81,12 @@ function MenuContent() {
           />
         </div>
       </section>
+
+      <CategoryTabs
+        categories={tabs}
+        activeCategory={activeCategory}
+        onSelect={setActiveCategory}
+      />
 
       <main className="flex-1 px-4 py-4 pb-32">
         <div className="grid grid-cols-1 gap-3">

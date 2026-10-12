@@ -14,7 +14,7 @@ export function CategoryTabs({
   onSelect,
 }: CategoryTabsProps) {
   return (
-    <nav className="sticky top-[60px] z-40 bg-background/95 backdrop-blur-sm py-2 px-margin-mobile flex gap-2 overflow-x-auto snap-x snap-mandatory">
+    <nav className="sticky top-0 z-40 bg-background/95 backdrop-blur-sm py-2 px-margin-mobile flex gap-2 overflow-x-auto snap-x snap-mandatory">
       {categories.map((cat) => {
         const isActive = cat.id === activeCategory;
         return (
