@@ -4,10 +4,10 @@ from sqlalchemy import ForeignKey, Integer, String, Text
 from sqlalchemy.dialects.postgresql import UUID
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
-from models.base import Base, PKMixin
+from models.base import Base, CreatedAtMixin, PKMixin
 
 
-class OrderItem(PKMixin, Base):
+class OrderItem(PKMixin, CreatedAtMixin, Base):
     __tablename__ = "order_items"
 
     order_id: Mapped[uuid.UUID] = mapped_column(

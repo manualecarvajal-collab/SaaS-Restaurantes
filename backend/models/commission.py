@@ -4,10 +4,10 @@ from sqlalchemy import ForeignKey, String
 from sqlalchemy.dialects.postgresql import UUID
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
-from models.base import Base, PKMixin
+from models.base import Base, CreatedAtMixin, PKMixin
 
 
-class Commission(PKMixin, Base):
+class Commission(PKMixin, CreatedAtMixin, Base):
     __tablename__ = "commissions"
 
     restaurant_id: Mapped[uuid.UUID] = mapped_column(

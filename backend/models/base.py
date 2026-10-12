@@ -22,6 +22,14 @@ class TimestampMixin:
     )
 
 
+class CreatedAtMixin:
+    """For tables that only carry created_at (commissions, order_items, ...)."""
+
+    created_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), server_default=func.now(), nullable=False
+    )
+
+
 class PKMixin:
     id: Mapped[uuid.UUID] = mapped_column(
         UUID(as_uuid=True), primary_key=True, default=uuid.uuid4

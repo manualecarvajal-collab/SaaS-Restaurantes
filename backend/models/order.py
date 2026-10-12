@@ -1,11 +1,31 @@
 import uuid
 from datetime import datetime
 
-from sqlalchemy import DateTime, ForeignKey, Integer, String, Text
+from sqlalchemy import DateTime, ForeignKey, String, Text
+from sqlalchemy.dialects.postgresql import ENUM as PGEnum
 from sqlalchemy.dialects.postgresql import UUID
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
 from models.base import Base, PKMixin, TimestampMixin
+
+# Native Postgres enum created by migrations/001_create_tables.sql.
+# create_type=False: the type already exists, SQLAlchemy must not try to emit it.
+ORDER_STATUS_VALUES = (
+    "PENDING",
+    "PAYMENT_SENT",
+    "CONFIRMED",
+    "PREPARING",
+    "READY",
+    "DELIVERED",
+    "CANCELLED",
+)
+
+ORDER_STATUS_ENUM = PGEnum(
+    *ORDER_STATUS_VALUES,
+    name="order_status",
+    create_type=False,
+    validate_strings=True,
+)
 
 
 class Order(PKMixin, TimestampMixin, Base):
@@ -18,7 +38,7 @@ class Order(PKMixin, TimestampMixin, Base):
         UUID(as_uuid=True), ForeignKey("tables.id"), nullable=False
     )
     status: Mapped[str] = mapped_column(
-        String,
+        ORDER_STATUS_ENUM,
         default="PENDING",
         nullable=False,
     )
@@ -35,11 +55,14 @@ class Order(PKMixin, TimestampMixin, Base):
     table: Mapped["Table"] = relationship(  # noqa: F821
         "Table", back_populates="orders"
     )
+    # OrderResponse embeds both collections, so they are loaded eagerly.
+    # Without lazy="selectin" pydantic's model_validate triggers a lazy load
+    # outside the async context and the request dies with MissingGreenlet.
     items: Mapped[list["OrderItem"]] = relationship(  # noqa: F821
-        "OrderItem", back_populates="order"
+        "OrderItem", back_populates="order", lazy="selectin"
     )
     payments: Mapped[list["Payment"]] = relationship(  # noqa: F821
-        "Payment", back_populates="order"
+        "Payment", back_populates="order", lazy="selectin"
     )
     status_history: Mapped[list["OrderStatusHistory"]] = relationship(  # noqa: F821
         "OrderStatusHistory", back_populates="order"

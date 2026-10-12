@@ -1,20 +1,21 @@
 import uuid
 
-from sqlalchemy import ForeignKey, String, Text
+from sqlalchemy import ForeignKey, Text
 from sqlalchemy.dialects.postgresql import UUID
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
-from models.base import Base, PKMixin
+from models.base import Base, CreatedAtMixin, PKMixin
+from models.order import ORDER_STATUS_ENUM
 
 
-class OrderStatusHistory(PKMixin, Base):
+class OrderStatusHistory(PKMixin, CreatedAtMixin, Base):
     __tablename__ = "order_status_history"
 
     order_id: Mapped[uuid.UUID] = mapped_column(
         UUID(as_uuid=True), ForeignKey("orders.id", ondelete="CASCADE"), nullable=False
     )
-    from_status: Mapped[str | None] = mapped_column(String, nullable=True)
-    to_status: Mapped[str] = mapped_column(String, nullable=False)
+    from_status: Mapped[str | None] = mapped_column(ORDER_STATUS_ENUM, nullable=True)
+    to_status: Mapped[str] = mapped_column(ORDER_STATUS_ENUM, nullable=False)
     changed_by: Mapped[uuid.UUID | None] = mapped_column(
         UUID(as_uuid=True), ForeignKey("profiles.id"), nullable=True
     )
