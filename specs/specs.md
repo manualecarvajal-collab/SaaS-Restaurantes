@@ -591,10 +591,61 @@ postgresql://postgres:[YOUR-PASSWORD]@db.<project-ref>.supabase.co:5432/postgres
 
 #### Seed Users
 
-| Role | Email | Password |
-|------|-------|----------|
-| **SuperAdmin** | `superadmin@example.com` | `superadmin123` |
-| **Admin** | `admin@lacocina.com` | `admin123` |
+Emails only — **passwords are deliberately not committed**, because this
+repository is public.
+
+| Role | Email |
+|------|-------|
+| **SuperAdmin** | `superadmin@example.com` |
+| **Admin** | `admin@admin.com` |
+
+`backend/scripts/seed.py` reads the passwords from `SEED_SUPERADMIN_PASSWORD`
+and `SEED_ADMIN_PASSWORD` in `backend/.env` (gitignored). Rotate them in Supabase
+before any production use.
+
+> **Note**: `backend/scripts/seed.py` creates `admin@admin.com` with the id
+> `748f4186-c1d0-4ad3-bb2a-98c0e39c69c2`, so reseeding an empty database
+> reproduces the admin account that exists today. Earlier revisions of the
+> script bootstrapped `admin@lacocina.com`, which never existed in this project.
+
+#### Database State
+
+Verified against the restored Supabase project:
+
+| Table | Rows |
+|-------|------|
+| restaurants | 1 |
+| profiles | 2 |
+| tables | 5 |
+| menu_categories | 4 |
+| menu_items | 15 |
+| orders | 7 |
+| order_items | 16 |
+| payments | 5 |
+| commissions | 1 |
+| order_status_history | 23 |
+
+QR tokens: `A1B2C3`, `D4E5F6`, `G7H8I9`, `J0K1L2`, `M3N4O5`.
+
+> **Caveat: restoring a Supabase project can drop table grants.** After the
+> restore, `anon`, `authenticated` and `service_role` came back with only
+> `REFERENCES`, `TRIGGER` and `TRUNCATE` on the `public` tables. Every
+> PostgREST request then fails with
+> `403 permission denied for table <name>`. Re-apply the standard grants:
+>
+> ```sql
+> GRANT ALL ON ALL TABLES    IN SCHEMA public TO anon, authenticated, service_role;
+> GRANT ALL ON ALL SEQUENCES IN SCHEMA public TO anon, authenticated, service_role;
+> GRANT ALL ON ALL FUNCTIONS IN SCHEMA public TO anon, authenticated, service_role;
+> ALTER DEFAULT PRIVILEGES IN SCHEMA public GRANT ALL ON TABLES TO anon, authenticated, service_role;
+> ```
+>
+> RLS stays enabled and remains the real access barrier — with the anon key,
+> `restaurants` correctly returns `[]` while `menu_items` is readable.
+
+> **Schema note**: `restaurants` has no `pago_movil_*` columns in the live
+> database, even though `migrations/000_full_schema.sql` creates them. That
+> belongs to pending feature #13 (restaurant bank details CRUD).
 
 #### Example `.env` File
 
@@ -627,19 +678,30 @@ NEXT_PUBLIC_API_URL=http://localhost:8000/api/v1
 
 ### B. Useful Commands
 
+All backend commands are run **from `backend/`**, so that `backend/.env` is the
+file `core/config.py` picks up (`env_file=".env"` is relative to the working
+directory).
+
 ```bash
-# Backend
+# Backend (from backend/)
 uv run uvicorn main:app --reload
 uv run pytest
-uv run python scripts/migrate.py
-uv run python scripts/seed.py
+uv run python scripts/migrate.py --dry-run   # list migrations, run nothing
+uv run python scripts/migrate.py             # apply (EMPTY database only)
+uv run python scripts/seed.py                # auth users + seed data
 uv add <package>
 
-# Frontend
+# Frontend (from frontend/)
 npm run dev
 npm run build
 npm run lint
 ```
+
+> **Migrations are not idempotent.** `001` raises on an existing
+> `order_status` type, `002` on existing RLS policies and `003` on duplicate
+> seed rows. Each file is applied as a single implicit transaction, so a file
+> that fails leaves nothing behind — but `migrate.py` is a bootstrap tool for a
+> fresh database, not a re-runnable migrator.
 
 ### C. Related Documents
 

@@ -28,3 +28,7 @@ node_modules/
 Thumbs.db
 .DS_Store
 .vercel
+
+# Documentos comerciales: no se publican (tarifas)
+propuesta/
+.lic/
