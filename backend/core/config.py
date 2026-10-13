@@ -8,6 +8,10 @@ class Settings(BaseSettings):
         env_file=".env",
         env_file_encoding="utf-8",
         case_sensitive=True,
+        # .env also carries variables this app does not consume (e.g. the
+        # SEED_*_PASSWORD pair used only by scripts/seed.py). Without this,
+        # pydantic rejects the whole settings object and the API will not boot.
+        extra="ignore",
     )
 
     PROJECT_NAME: str = "QR Ordering SaaS"
