@@ -32,3 +32,6 @@ Thumbs.db
 # Documentos comerciales: no se publican (tarifas)
 propuesta/
 .lic/
+
+# Credenciales locales
+CREDENCIALES.md
